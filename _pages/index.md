@@ -13,7 +13,7 @@ permalink: /
 
 Maybe you might want to look at:
 
-[[coursera thoughts]]
+[[coursera]]
 
 [[personal philosophy]]
 
