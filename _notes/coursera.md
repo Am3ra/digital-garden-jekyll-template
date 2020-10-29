@@ -1,6 +1,3 @@
----
-title: coursera thoughts
----
 
 # Coursera
 
