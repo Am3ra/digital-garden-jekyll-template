@@ -1,5 +1,5 @@
 ---
-title: coursera
+title: coursera thoughts
 ---
 
 # Coursera

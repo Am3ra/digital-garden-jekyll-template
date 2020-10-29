@@ -13,12 +13,13 @@ permalink: /
 
 Maybe you might want to look at:
 
-[[coursera]]
+[[coursera thoughts]]
 
-[[personal-philosophy]]
+[[personal philosophy]]
 
 <style>
   .wrapper {
     max-width: 46em;
   }
 </style>
+
