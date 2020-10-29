@@ -1,5 +1,3 @@
-
-
 # Digital garden Jekyll template
 
 Use this template repository to get started with your own digital garden.
