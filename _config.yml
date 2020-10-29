@@ -6,7 +6,7 @@ include:             ['_pages']
 baseurl:             /
 
 permalink:           pretty
-relative_permalinks: false
+relative_permalinks: true
 
 plugins:
   - jekyll-last-modified-at
