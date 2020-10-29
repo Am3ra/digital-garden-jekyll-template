@@ -1,8 +1,13 @@
+---
+title: A note about my coursera course
+---
 # Coursera
 
 Coursera is a learning platform that hosts Massive Online Open Courses (MOOCs).
 
 I've taken several (currently have completed six), with a couple more in the works.
+
+This is my main source of learning during the [[covid 19]] pandemic.
 
 ## Philosophy
   
