@@ -9,6 +9,7 @@ One of the principal problems that I think we have is measuring intelligence, an
 I don't know specifically when I became interested in artificial intelligence. But it was definitely more than a couple of years ago. A definite turning point, though almost certainly not the start, was the [Wait but Why AI artilcle.](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html) The view that it presents on superintelligence definitely changed the way that I view the future of humanity/AI (closely correlated).
 
 
+
 ## Problems in AI
 
 How do we solve the control problem? Can we?
