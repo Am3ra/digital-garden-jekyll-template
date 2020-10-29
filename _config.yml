@@ -3,7 +3,7 @@ include:             ['_pages']
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
 # Pages deploys your repository (which is usually the repository name).
-baseurl:             thoughts/
+baseurl:             /
 
 permalink:           pretty
 relative_permalinks: false
