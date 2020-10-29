@@ -1,6 +1,4 @@
----
-permalink: /covid
----
+
 
 # COVID 1923`
 
