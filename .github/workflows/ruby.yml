@@ -30,4 +30,4 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Run deploy
-      run: bundle exec jekyll serve
+      run: bundle exec jekyll build
