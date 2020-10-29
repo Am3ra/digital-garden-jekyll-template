@@ -1,3 +1,6 @@
+---
+permalink: /coursera
+---
 # Coursera
 
 Coursera is a learning platform that hosts Massive Online Open Courses (MOOCs).
