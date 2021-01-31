@@ -1,0 +1,2 @@
+# Coursera Thoughts
+
