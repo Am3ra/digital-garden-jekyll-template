@@ -3,7 +3,7 @@
 
 # Programming Languages
 
-A course from [[university]], [[7th-semester]]
+A course from [[university]], [[7th semester]]
 
 ## What is a programming language
 

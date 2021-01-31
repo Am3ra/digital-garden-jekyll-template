@@ -3,7 +3,7 @@
 
 # Literatura Mundial Contemporanea
 
-A class I took in [[7th-semester]] of [[university]]
+A class I took in [[7th semester]] of [[university]]
 
 - it focuses on European literature from the las 100 years.
 
