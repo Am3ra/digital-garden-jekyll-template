@@ -1,3 +1,6 @@
+---
+---
+
 # Theory of Mind
 
 tags: [[personal-philosophy]]

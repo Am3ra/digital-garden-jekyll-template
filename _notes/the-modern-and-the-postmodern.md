@@ -1,3 +1,6 @@
+---
+---
+
 # The Modern and the Postmodern
 
 Part of my "holistic" (though I'm not sure I like that word) studies. Part of becoming human.

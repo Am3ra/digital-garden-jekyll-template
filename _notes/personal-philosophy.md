@@ -1,3 +1,6 @@
+---
+---
+
 # Personal Philosophy
 
 I have taken many Philosophy courses in my life. Among the most important are those that deal with [[epistemology]].

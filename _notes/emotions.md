@@ -1,3 +1,6 @@
+---
+---
+
 # Emotions
 
 Emotions are a tricky thing. I think they really are something that give life its zest. Functionally, I subscribe to the theory that emotions are simply a control mechanism. According to what little I know about the [[Theory of Mind]], our consciousness is simply a heirarchy of control mechanisms. As an analogy to neural networks, emotions are a way for our brains to quickly change the weights and biases of our neurons in order to elicit a particular response. As an example, pain makes us try to avoid a particular situation, while happiness or sweetness that produces happiness makes us try to encourage certain situations.  

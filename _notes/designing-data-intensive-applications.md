@@ -1,3 +1,6 @@
+---
+---
+
 # Designing Data-Intensive Applications
 
 Part of my series of [[notes-on-papers]].

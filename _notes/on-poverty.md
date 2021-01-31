@@ -1,3 +1,6 @@
+---
+---
+
 # On Poverty
 
 tags: [[personal-philosophy]]

@@ -1,3 +1,6 @@
+---
+---
+
 # Condensed Notes on Free Will
 
 Tags: [[theory-of-mind]],[[personal-philosophy]]

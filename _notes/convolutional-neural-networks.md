@@ -1,3 +1,6 @@
+---
+---
+
 # Convolutional Neural Networks
 
 ## Assignments [[todo]]

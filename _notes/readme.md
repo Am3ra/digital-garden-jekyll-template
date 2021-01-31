@@ -1,3 +1,6 @@
+---
+---
+
 # Welcome to my Thoughts!
 
 This is a site that catalogues, tracks, and even maps my thoughts.

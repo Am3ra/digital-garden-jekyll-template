@@ -1,3 +1,6 @@
+---
+---
+
 # 7th Semester
 
 In my seventh semester of university, I took the following classes:

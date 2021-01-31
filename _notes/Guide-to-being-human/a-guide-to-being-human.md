@@ -1,3 +1,6 @@
+---
+---
+
 # A guide to being human
 
 tags: [[personal-philosophy]]

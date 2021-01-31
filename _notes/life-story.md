@@ -1,3 +1,6 @@
+---
+---
+
 # Life Story
 
 I believe that my life story has a couple main chapters so far:

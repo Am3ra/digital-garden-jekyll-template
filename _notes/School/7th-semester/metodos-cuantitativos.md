@@ -1,3 +1,6 @@
+---
+---
+
 # Metodos Cuantitativos
 
 A class i took in [[7th semester]] in [[university]].
