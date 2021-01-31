@@ -7,7 +7,7 @@ While reading papers, it's useful to take notes to better understand.
 
 Genres:
 
-## [[deep-learning]]
+## [[Deep Learning]]
 
 * [[On the Measure of Intelligence]]
 

@@ -3,7 +3,7 @@
 
 # Baseball Project
 
-Tags: [[deep-learning]]
+Tags: [[Deep Learning]]
 
 This project is an attempt to use what I've learned from my deep learning classes.
 

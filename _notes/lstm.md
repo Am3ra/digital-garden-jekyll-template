@@ -3,7 +3,7 @@
 
 # LSTM
 
-tags : [[sequence-models]] [[artificial-intelligence]] [[deep-learning]]
+tags : [[sequence-models]] [[artificial-intelligence]] [[Deep Learning]]
 
 
 

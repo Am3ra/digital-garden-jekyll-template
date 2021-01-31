@@ -3,7 +3,7 @@
 
 # Sequence Models
 
-tags : [[coursera]] [[deep-learning]]
+tags : [[coursera]] [[Deep Learning]]
 
 Traditional neural networks have a very obvious problem: *they can't easily process sequence data*. Worse still, they can't deal easily - or at all without re-training - with variably sized inputs.
 

@@ -7,7 +7,7 @@ Metadata:
 
 * Author: [[Francois Chollet]]
 * Date: November 5, 2015
-* Genre: [[Artificial Intelligence]], [[deep-learning]]
+* Genre: [[Artificial Intelligence]], [[Deep Learning]]
 
 ## Abstract
 
