@@ -24,7 +24,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         # [[A note about cats|this is a link to the note about cats]]
         current_note.content = current_note.content.gsub(
           /\[\[#{title_from_filename}\|(.+?)(?=\])\]\]/i,
-          "<a class='internal-link' href='#{note_potentially_linked_to.url}#{link_extension}'>\\1</a>"
+          "<a class='internal-link' href='#{site.baseurl}#{note_potentially_linked_to.url}#{link_extension}'>\\1</a>"
         )
 
         # Replace double-bracketed links with label using note filename
