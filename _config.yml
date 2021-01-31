@@ -11,7 +11,7 @@ baseurl:             /thoughts/
 use_html_extension:  false
 
 permalink:           pretty
-relative_permalinks: false
+relative_permalinks: true
 
 plugins:
   - jekyll-last-modified-at
