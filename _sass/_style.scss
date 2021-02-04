@@ -1,12 +1,38 @@
-$color-primary: hsl(0, 0%, 10%);
-$color-text: hsl(0, 0%, 20%);
-$color-subtext: hsl(0, 0%, 30%);
-$color-border: hsl(0, 0%, 85%);
-$color-box-background: mix($color-primary, white, 4%);
+$color-primary-light: hsl(0, 0%, 10%);
+$color-text-light: hsl(0, 0%, 20%);
+$color-subtext-light: hsl(0, 0%, 30%);
+$color-border-light: hsl(0, 0%, 85%);
+$color-box-background-light: mix($color-primary-light, white, 4%);
+$color-primary-dark: hsl(0, 0%, 90%);
+$color-text-dark: hsl(0, 0%, 80%);
+$color-subtext-dark: hsl(0, 2%, 70%);
+$color-border-dark: hsl(0, 0%, 15%);
+$color-box-background-dark: #222;
+
+@mixin darkmodeToggle ($property, $val1, $val2) {
+ #{$property}: $val1;
+  @media (prefers-color-scheme: light){
+    #{$property}: $val1;
+  }
+  @media (prefers-color-scheme: dark) {
+    #{$property}: $val1;
+  }
+}
+
+
 $border-radius: 4px;
+
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
+html {
+  @media (prefers-color-scheme: light) {
+    background-color: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: #181818;
+  }
+}
 body {
   box-sizing: content-box;
   font-family: $font-family;
@@ -14,7 +40,7 @@ body {
   line-height: 1.7;
   padding: 4vh 6vw;
   overflow-x: hidden;
-  color: $color-text;
+  @include darkmodeToggle(color, $color-text-light, $color-text-dark);
   font-size: 1rem;
   max-width: 63em;
 
@@ -25,14 +51,14 @@ body {
 
 time {
   display: block;
-  color: $color-subtext;
+  @include darkmodeToggle(color, $color-subtext-light, $color-subtext-dark);
   margin: 0.5em 0 1em;
 }
 
 footer {
   margin: 2em 0;
   font-size: 0.8em;
-  color: mix($color-text, white, 80%);
+  color: mix($color-text-light, white, 80%);
   padding-top: 1em;
 }
 
@@ -48,7 +74,8 @@ blockquote {
   padding: 1.5em;
   margin: 0;
   font-size: 0.88em;
-  background: $color-box-background;
+  @include darkmodeToggle(background, $color-box-background-light, $color-box-background-dark); 
+
   border-radius: $border-radius;
 
   p {
@@ -61,7 +88,7 @@ hr {
   border: 0;
   height: 1px;
   margin: 1.5em 0;
-  background: $color-border;
+  @include border();
 }
 
 h1,
@@ -79,21 +106,26 @@ a {
   transition: background 300ms;
   padding: 0 0.1em;
   text-decoration: none;
-  border-bottom: 1px solid $color-border;
-  color: $color-primary;
+  border-bottom: 1px solid $color-border-light;
+  color: $color-primary-light;
   &:hover {
     color: black !important;
-    background: #fffaf1;
+    background: #fdc13f;
   }
   &:after {
     position: relative;
     top: -0.5em;
     font-size: 0.7em;
-    content: "↗";
+    content: " ↗";
     color: #aaaaaa;
   }
-  &.internal-link:after {
-    content: "";
+  &.internal-link {
+    &:hover {
+      background: #c06afa83;
+    }
+    &:after {
+      content: "";
+    }
   }
 }
 
@@ -120,7 +152,7 @@ nav {
 }
 
 .backlink-box {
-  background: $color-box-background;
+  @include box();
   padding: 1em;
   border-radius: $border-radius;
 }
