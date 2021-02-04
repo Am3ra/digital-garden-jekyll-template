@@ -1,0 +1,20 @@
+$color-primary-light: #1a1a1a;
+$color-text-light: #333333;
+$color-subtext-light: #4d4d4d;
+$color-border-light: #d9d9d9;
+$color-box-background-light: mix($color-primary-light, white, 4%);
+$color-primary-dark: #e6e6e6;
+$color-text-dark: #cccccc;
+$color-subtext-dark: #b4b1b1;
+$color-border-dark: #262626;
+$color-box-background-dark: #222;
+
+@mixin darkmodeToggle($property, $val1, $val2) {
+  #{$property}: $val1;
+  @media (prefers-color-scheme: light) {
+    #{$property}: $val1;
+  }
+  @media (prefers-color-scheme: dark) {
+    #{$property}: $val2;
+  }
+}

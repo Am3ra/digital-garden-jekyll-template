@@ -1,3 +1,6 @@
+---
+---
+
 topic: [[Seedling]], [[personal philosophy]]
 
 When talking about the illusion of climate change, I want to begin by saying that Climate Change is a very real phenomenon that we as a society should be more worried about.
