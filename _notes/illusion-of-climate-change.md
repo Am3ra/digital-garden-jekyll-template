@@ -17,6 +17,22 @@ Given this fact, there is nothing more to do than try to recycle your plastics (
 
 ## What YOU can actually do.
 
+### Personal Measures
+
+### Political Actions
+
+- Learn about Local/National Politics
+- Join organizations
+    - Take part in events such as marches or protests
+
+## What Countries Should Do
+
+### The carbon tax
+
+### Waste tax
+
+Instead 
+
 ## Bibliography:
 
 ### Works Cited
