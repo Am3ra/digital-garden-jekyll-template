@@ -131,6 +131,7 @@ nav {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "content side";
   }
+  max-width: 100vw;
 }
 
 .backlink-box {
