@@ -6,6 +6,8 @@ Class taken in my [[8th semester]] of [[university]]
 - [Topic 1. Basic Concepts of the Compilation Process](#topic-1-basic-concepts-of-the-compilation-process)
     - [Class 1](#class-1)
         - [Classifications of Programming Languages](#classifications-of-programming-languages)
+    - [Day 2 - Translation Process](#day-2---translation-process)
+    - [Steps of Compilations](#steps-of-compilations)
 - [Topic 2. The Analysis Phase](#topic-2-the-analysis-phase)
     - [Lexical Analysis](#lexical-analysis)
     - [Syntax Analysis](#syntax-analysis)
@@ -35,31 +37,64 @@ What is a programming language?
 #### Classifications of Programming Languages
 
 - By Abstraction level:
-    -  Low level
-    
+    - Low level
+
             Direct memory access
-    -  Medium Level
-    -  High Level
+    - Medium Level
+    - High Level
 
             Memory Access through operators
-    -  Very High Level
+    - Very High Level
 
             No memory access?
--  By historic evolution
-    -  Machine language
-    -  Associative language
-    -  Procedural language
-    -  Application language
-    -  Inference language
-    -  Neural Networks
--  By expression of Solution
-    -  Imperative/Procedural
-    -  Declarative
--  By Paradigm
-    -  Imperative
-    -  OOP
-    -  Functional
-    -  Logical
+    - By historic evolution
+    - Machine language
+    - Associative language
+    - Procedural language
+    - Application language
+    - Inference language
+    - Neural Networks
+- By expression of Solution
+     Imperative/Procedural
+    - Declarative
+- By Paradigm
+    - Imperative
+    - OOP
+    - Functional
+    - Logical
+
+### Day 2 - Translation Process
+
+Term | Definition
+---  | ---
+Translation | The process of exchanging equivalents.
+
+Translation takes an input in language A, and either produces an equivalent in language B, or an error.
+
+- Features of a Compiler
+    - Translates from source code to object code
+    - Can throw errors
+
+### Steps of Compilations
+
+1. Lexical Analysis
+    - Determine if elements (tokens) exist in source language
+    - Clean source code
+        - remove whitespace
+        - remove comments
+        - (normalize capitalization)
+2. Syntactic Analysis
+   - Determine if sequence of elements conforms to correct structure
+   - Structure is given by the language's grammar
+3. Semantic Analysis
+   - Determine the congruence of the elements according to meaning established as valid by the language.
+   - Basically it's the type-checking system
+4. Intermediate Code Generation (Optional)
+5. Code optimization (Optional)
+   - Step that minimizes time or space requirements of the code.
+6. Object code generation
+
+
 ## Topic 2. The Analysis Phase
 
 ### Lexical Analysis
