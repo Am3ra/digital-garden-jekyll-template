@@ -7,7 +7,7 @@ permalink: /
 
 # Welcome to Alan Macedos Mind Garden!! 🌱
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
+<p class="blockquote" style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
   Take a look at my <span style="font-weight: bold">[[personal philosophy]]</span> to get started on your exploration of my thoughts!
 </p>
 
