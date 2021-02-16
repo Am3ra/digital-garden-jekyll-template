@@ -5,17 +5,15 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+# Welcome to Alan Macedos Mind Garden!! 🌱
 
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
+  Take a look at my <span style="font-weight: bold">[[personal philosophy]]</span> to get started on your exploration of my thoughts!
 </p>
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+If you want to read about me, personally, look at my [[life story]].
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll). If you need any help, my [DMs are open on Twitter (@vaillancourtmax)](https://twitter.com/vaillancourtmax). Say hi! 👋
-
-If this template helps you in any way, [consider buying me a coffee](https://ko-fi.com/maximevaillancourt)! ☕️
+Most notes aren't completed and are marked [[seedling]], but you might find some notes that are more polished in my [[evergreen]] section!
 
 <style>
   .wrapper {
