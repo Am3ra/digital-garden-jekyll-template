@@ -34,32 +34,48 @@ If you don't live within the U.S. or China, chances are, even as a country you d
 
 ## What YOU can actually do.
 
-So although the point of this article is to say that most of the things that most people do to combat climate change aren't effective, that isn't to say that no actions a person can take are effective, or not to do things such as recycle. Rather, the point is that while these actions are helpful, it's more useful to invest your energy in other places.
+So although the point of this article is to say that most of the things that most people do to combat climate change aren't effective, that isn't to say that no actions a person can take are effective, or not to do things such as recycle. Rather, the point is that while these actions are helpful, it's more useful to invest your energy in other places. Here are a couple tips:
 
 ### Personal Measures
 
-Avoid using planes as much as possible, and use public transport as much as possible.
+Avoid using planes as much as possible, and use public transport as much as possible. During times of pandemic, this isn't feasible, but it helps when possible. Try to reduce personal waste production. More than that, focus on political actions. Get Righteous.
 
 ### Political Actions
 
-The main response to these large-scale systemic problems *has to be* political.
+The main response to these large-scale systemic problems *has to be* political. It's pretty much impossible for small-scale personal actions to have a meaningful effect, when we have no personal control over the largest polluters (i.e. corporations). 
 
 - Learn about Local/National Politics
+    
+    There's no feasible way to create a lasting effect in politics, if you don't know what the main problems are. This is relatively difficult, given the current state of media. A good approximation is going to be in my [[a guide to being human]].
+    - I'm currently in the middle of this process, learning about [[mexican politics]]. 
 - Join organizations
-    - Take part in events such as marches or protests
+
+   Once you've identified a suitable problem (e.g. lax environmental regulations) a good move is generally to join or even create a group centered around this issue.
+    - Take part in events such as marches or protests.
+
+        This is generally a good way to gain attention to your cause, and effect political change.
 
 ## What Countries Should Do
 
+If you're in a position of power, or would like suggestions on important climate change topics, here are a couple pointers.
+
 * Renewable energy
     * Nuclear
+  
+		Nuclear energy has been demonized, but it is one of the more realistic solutions. It is one of the few (another notable example is geothermal) energy sources capable of delivering constant energy. 
+
     * Solar
     * Wind
 
 ### The carbon tax
 
+In a similar vein to the waste tax, the carbon tax seeks to pin the responsibility of the effects of contamination on the organizations that produce it. It shouldn't be society's role to clean up the effects of a company's contamination. Implementations such as the one in california, although not perfect by any means, have funded great environmental projects through their credits system.
+
 ### Waste tax
 
-Instead 
+Instead of pinning the responsibility of disposing the waste that products generate on the consumer, a waste tax would seek to penalize companies that produce waste-producing products. Large packages, or single-use items are an incredible source of contamination. Consumers shouldn't have to pay to dispose of items safely (effectively paying twice for the product). The onus should be on companies, in order to incentivize them to reduce waste, and promote safe disposal practices.
+
+### 
 
 ## Bibliography:
 
