@@ -11,7 +11,7 @@
   - even little action is better than no action
   - Role of political/ethical activism.
     - inconvenience.
-- Purpose of society
+- [[Purpose of society]]
   - Why not live alone?
   - Role of society
     - Oppression? -> investigate further
@@ -25,3 +25,5 @@
     - Shelter
 - Shuffering and shmiling
   - Shufrir y shonreir
+- Immigration
+	- What are the impacts	?
