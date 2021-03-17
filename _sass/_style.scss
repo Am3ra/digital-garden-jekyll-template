@@ -98,16 +98,10 @@ a {
     color: #aaaaaa;
     @include darkmodeToggle(color, #aaa, #b6b6b6);
   }
-  &.internal-link {
-    @include darkmodeToggle(background, white, #3b3b3b );
-
-    &:hover {
-      background: #c06afa83;
-      color: black !important;
-    }
-    &:after {
-      content: "";
-    }
+  &.internal-link:after,
+  &.footnote:after,
+  &.reversefootnote:after {
+    content: "";
   }
 }
 
