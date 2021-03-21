@@ -1,3 +1,6 @@
+---
+---
+
 What is the purpose of society?
 
 What is the purpose of government?

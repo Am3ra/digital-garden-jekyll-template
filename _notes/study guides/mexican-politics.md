@@ -1,3 +1,6 @@
+---
+---
+
 a note on my journey through studying mexican politics.
 
 
