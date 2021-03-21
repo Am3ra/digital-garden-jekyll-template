@@ -10,3 +10,4 @@ Looking at this, I want to experiment more with Polymer, a web components librar
 Lets import and use a component.
 [Extending Include Components in Jekyll - Bjorn Lu](https://bjornlu.com/blog/extending-include-components-in-jekyll
 [Jekyll Includes are Cool - daverupert.comdaverupert.com](https://daverupert.com/2017/07/jekyll-includes-are-cool/)
+
