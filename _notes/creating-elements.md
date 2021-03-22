@@ -1,6 +1,6 @@
 ---
 ---
-<script src="">
+<script src=""></script>
 this is an attempt at cataloguing my recent foray into web components. 
 This is a note referencing [[about this site]]
 
