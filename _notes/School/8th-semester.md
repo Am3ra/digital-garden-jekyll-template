@@ -13,6 +13,5 @@ In my seventh semester of university, I took the following classes:
 * [[Aplicaciones Web]]
 * [[Finanzas personales]]
 
-As an additional activity, I took yoga.
 
 
