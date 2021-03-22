@@ -14,7 +14,7 @@ Lets import and use a component.
 Extending Include Components in Jekyll - Bjorn Lu](https://bjornlu.com/blog/extending-include-components-in-jekyll
 
 [Jekyll Includes are Cool - daverupert.comdaverupert.com](https://daverupert.com/2017/07/jekyll-includes-are-cool/)
-
-
-
-<interesting></interesting>
+<script async src="https://unpkg.com/es-module-shims@0.10.1/dist/es-module-shims.js"></script
+<script type="module" src="https://cdn.jsdelivr.net/npm/lit-element@2.4.0/lit-element.min.js"></script>
+<script type="module" src="./components/my-element.js"></script>
+<my-element mood="awesome"></my-element>
