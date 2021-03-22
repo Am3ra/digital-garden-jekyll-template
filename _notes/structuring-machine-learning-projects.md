@@ -1,5 +1,0 @@
----
----
-
-# Structuring Machine Learning Projects
-

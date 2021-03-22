@@ -16,17 +16,17 @@ _includes/notes_graph.json
 
 node_modules/**/*
 
-_includes/
+# _includes/
 
-_layouts/
+# _layouts/
 
-_pages/
+# _pages/
 
-_plugins/
+# _plugins/
 
-_sass/
+# _sass/
 
-Gemfile
+# Gemfile
 
 Gemfile.lock
 
