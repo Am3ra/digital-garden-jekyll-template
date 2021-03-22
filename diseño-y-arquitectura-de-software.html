@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <link rel="canonical" href="/dise%C3%B1o-y-arquitectura-de-software" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Diseño Y Arquitectura De Software">
+
+  <meta property="og:site_name" content="My digital garden">
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="/thoughts/styles.css">
+
+  
+  <meta property="og:description" content="Diseño Y Arquitectura De Software"/>
+  
+
+  
+  <meta property="og:title" content="Diseño Y Arquitectura De Software">
+  <meta property="og:type" content="article">
+  
+
+  
+  <meta property="article:published_time" content="2021-03-21T23:05:55-06:00">
+  <meta property="article:author" content="/">
+  
+
+  <meta property="og:url" content="/dise%C3%B1o-y-arquitectura-de-software" />
+
+  
+
+  <title>
+    
+      Diseño Y Arquitectura De Software &mdash; My digital garden
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/thoughts/"><b>My digital garden</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1>Diseño Y Arquitectura De Software</h1>
+    <time datetime="2021-01-31T02:23:18-06:00">
+      Last updated on January 31, 2021
+      
+    </time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h1 id="diseño-y-arquitectura-de-software">Diseño Y Arquitectura De Software</h1>
+
+<p>Tags: <a class="internal-link" href="/thoughts/7th-semester">7th semester</a> <a class="internal-link" href="/thoughts/university">university</a></p>
+
+<h2 id="what-is-software-architecture">What is Software architecture?</h2>
+
+<ul>
+  <li>Software Architecture
+    <ul>
+      <li>An abstraction of the implementation</li>
+      <li>Every software system has an Architecture</li>
+      <li>Architecture includes behavior.</li>
+      <li>Structures
+        <ul>
+          <li>A structure is a set of elements themselves, as they exist in software or hardware.</li>
+          <li>Types of structures:
+            <ul>
+              <li>Modules
+                <ul>
+                  <li>Major partitions of elements, like MVC</li>
+                </ul>
+              </li>
+              <li>Component and Connector (C&amp;C)
+                <ul>
+                  <li>Focus on the way that elements interact with each-other</li>
+                  <li>dynamic</li>
+                  <li>runtime structures</li>
+                </ul>
+              </li>
+              <li>Allocation structure
+                <ul>
+                  <li>mapping from software structures to the system’s organizational, developmental, installation, and execution environments.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Views
+        <ul>
+          <li>A representation of a coherent set of architectural elements, as written and read by system stakeholders.</li>
+          <li>It is a representation of a set of elements, and the relation between them.</li>
+          <li>In short, a view is a representation of a structure</li>
+        </ul>
+      </li>
+      <li>Architecture as a set of Structures
+        <ul>
+          <li>Software systems are sets of structures, with relations between them.</li>
+          <li>No single structure is the architecture</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Software Architect
+    <ul>
+      <li>Technical Knowledge</li>
+      <li>Leadership and communication
+        <ul>
+          <li>Effectively communicate ideas to stakeholders</li>
+          <li>Collaboration</li>
+          <li>Translation (business to technical)</li>
+        </ul>
+      </li>
+      <li>Business Domain Knowledge
+        <ul>
+          <li>Architecture that fits domain.</li>
+          <li>Business trends.</li>
+          <li>Communication with business people.</li>
+        </ul>
+      </li>
+      <li>Methodology and strategy
+        <ul>
+          <li>Which methodology?
+            <ul>
+              <li>Scrum</li>
+              <li>Agile</li>
+              <li>Waterfall</li>
+              <li>etc</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Software vs. System vs. Enterprise
+    <ul>
+      <li>Software is the smallest scope of the three.</li>
+      <li>System includes software.</li>
+      <li>Enterprise includes system architecture.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="object-oriented-programming">Object oriented programming</h2>
+
+<ul>
+  <li>Encapsulation
+    <ul>
+      <li>Objects try to keep state private. (Try.)</li>
+    </ul>
+  </li>
+  <li>Abstraction
+    <ul>
+      <li>Hide complexities of internal operation</li>
+    </ul>
+  </li>
+  <li>Inheritance
+    <ul>
+      <li>Avoid repeating code by inheriting methods from parent classes.</li>
+    </ul>
+  </li>
+  <li>Polymorphism
+    <ul>
+      <li>Use a variable that is of a parent type, to call the same method from any type of child class.</li>
+    </ul>
+  </li>
+  <li>Abstract Classes and Interfaces
+    <ul>
+      <li>Interface is a contract to be fulfilled by classes that inherit.
+        <ul>
+          <li>All methods are abstract</li>
+        </ul>
+      </li>
+      <li>Abstract classes are abstract.
+        <ul>
+          <li>Only some (&gt;1) methods are abstract — some are concrete.</li>
+        </ul>
+      </li>
+      <li>Neither can be instantiated</li>
+    </ul>
+  </li>
+  <li>Association
+    <ul>
+      <li>Relation between classes.</li>
+      <li>Composition
+        <ul>
+          <li>Describes a class with a <em>has-a</em> relationship to another classes.
+            <ul>
+              <li>A car <em>has an</em> engine, it is not one.</li>
+            </ul>
+          </li>
+          <li>Restricted form of aggregation.</li>
+          <li>Implies one can’t exist without the other.</li>
+        </ul>
+      </li>
+      <li>Aggregation
+        <ul>
+          <li>Relationship where two entities are highly dependent of eachother.</li>
+          <li>represents <em>part-of</em> relationship</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="solid-principles">SOLID principles</h2>
+
+<ul>
+  <li>Single Responsibility
+    <ul>
+      <li>A class must have only one reason to change - single responsibility</li>
+    </ul>
+  </li>
+  <li>Open/Closed design
+    <ul>
+      <li>software entities (classes, modules, functions, etc.) must be opened for an extension, but closed for modification</li>
+      <li>Basically, every time you want to extend it, shouldn’t have to change the code.
+        <ul>
+          <li>Shape area() example</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Liskov Substitution Principle
+    <ul>
+      <li>subtypes should be replaceable by their base types</li>
+      <li>Basically, you should be able to replace Peugeot with Car</li>
+    </ul>
+  </li>
+  <li>Interface Segregation principle
+    <ul>
+      <li>many specific interfaces are better than a general interface</li>
+      <li>Make more specific interfaces that only do what they need to</li>
+    </ul>
+  </li>
+  <li>Dependency Inversion Principle
+    <ul>
+      <li>Depend on abstractions and not on concrete classes
+        <ul>
+          <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
+          <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Other important principles:</p>
+
+<ul>
+  <li>Law of Demeter
+    <ul>
+      <li>Call only friends</li>
+      <li>Don’t chain method calls:
+        <ul>
+          <li>Connection.getDriver( ).getName()</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Hollywood Principle
+    <ul>
+      <li>Don’t Call Us, We’ll Call you</li>
+      <li>Observer Pattern.</li>
+    </ul>
+  </li>
+  <li>KISS</li>
+  <li>YAGNI
+    <ul>
+      <li>Only code what you need</li>
+      <li>Don’t assume to know what you <em>will</em> need.</li>
+    </ul>
+  </li>
+  <li>DRY</li>
+</ul>
+
+<h2 id="architecture-quality">Architecture Quality</h2>
+
+<ul>
+  <li>Sample Application
+    <ul>
+      <li>Why are we seeing this UML diagram…</li>
+    </ul>
+  </li>
+  <li>Architecture Quality:
+    <ul>
+      <li>Depends on many Factors
+        <ul>
+          <li>Skill</li>
+          <li>Time</li>
+          <li>Legacy Dependencies</li>
+          <li>Time</li>
+          <li>Risk tolerance</li>
+          <li>Regulatory Constraint.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Architecture Factors:
+    <ul>
+      <li>Reliability
+        <ul>
+          <li>High Accuracy</li>
+          <li>Low Accuracy puts the organization at risk.</li>
+          <li>Performs function user expected</li>
+          <li><strong>System should continue performing correctly in face of adversity</strong></li>
+          <li>Can tolerate Mistakes
+            <ul>
+              <li>Types of mistakes:
+                <ul>
+                  <li>HW</li>
+                  <li>SW</li>
+                  <li>Human</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>What can we do:
+            <ul>
+              <li>Design to minimize opportunities for error.</li>
+              <li>Decouple places where mistakes happen and where mistakes can cause failure.</li>
+              <li>Test thoroughly.</li>
+            </ul>
+          </li>
+          <li>Chaos Monkey + Netflix</li>
+        </ul>
+      </li>
+      <li>Scalability
+        <ul>
+          <li>Ability to meet growth requirements.</li>
+          <li>“If the system grows in a particular way, what are our options for coping with the growth?”</li>
+          <li>Coping Mechanisms
+            <ul>
+              <li>Horizontal scalability
+                <ul>
+                  <li>adding more resources to logical units, such as adding another server to a cluster of servers</li>
+                  <li>Add more units (more buses)</li>
+                </ul>
+              </li>
+              <li>Vertical scalability
+                <ul>
+                  <li>Adding more resources to physical units</li>
+                  <li>Improve Units (better buses)</li>
+                </ul>
+              </li>
+              <li>Load Balancing
+                <ul>
+                  <li>Spread traffic across cluster of servers</li>
+                  <li>Keep track of statuses</li>
+                  <li>Load balancing Metrics:
+                    <ul>
+                      <li>Bandwidth</li>
+                      <li>Response time</li>
+                      <li>Connections</li>
+                    </ul>
+                  </li>
+                  <li>Load balancing algorithms
+                    <ul>
+                      <li>Round robin
+                        <ul>
+                          <li>Cycle a list of which server to direct traffic to</li>
+                        </ul>
+                      </li>
+                      <li>Weighted Round Robin
+                        <ul>
+                          <li>Weigh servers based on capabilities</li>
+                        </ul>
+                      </li>
+                      <li>IP hash
+                        <ul>
+                          <li>Simply hash the IPs</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Caching
+                <ul>
+                  <li>Store common responses in smaller memory</li>
+                  <li>CDN
+                    <ul>
+                      <li>Special type of Cache, helpful for statiic media.</li>
+                    </ul>
+                  </li>
+                  <li>Cache eviction policies
+                    <ul>
+                      <li>FIFO</li>
+                      <li>LIFO</li>
+                      <li>Least Recently used (oldest)</li>
+                      <li>Most Recently Used (Newest)</li>
+                      <li>Least Frequently Used</li>
+                      <li>Random Replacement</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Flexibility
+        <ul>
+          <li>Able to meet changing business demands</li>
+        </ul>
+      </li>
+      <li>Availability
+        <ul>
+          <li>probability that a system will work as required when required during the period of a mission</li>
+          <li>Ensures continuity</li>
+        </ul>
+      </li>
+      <li>Performance
+        <ul>
+          <li>Performance is an indicator of how well a software system or component meets its requirements for timeliness</li>
+          <li>Speed in effecting a task</li>
+          <li>Latency
+            <ul>
+              <li>Duration request waits to be handled</li>
+            </ul>
+          </li>
+          <li>Response time
+            <ul>
+              <li>Total time to get response to request</li>
+              <li>High response times cost money
+                <ul>
+                  <li>100ms increase in response time reduces sales by 1%</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>CAP THEOREM
+        <ul>
+          <li>Trade-off between Availability, Consistency, Partition Tolerance</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="week-7">Week 7</h2>
+
+<ul>
+  <li>UML
+    <ul>
+      <li>Degrees of UML
+        <ul>
+          <li>As a sketch
+            <ul>
+              <li>Explain ideas</li>
+            </ul>
+          </li>
+          <li>As a blueprint
+            <ul>
+              <li>provide detailed specification of a system</li>
+              <li>Generated with UML tool</li>
+            </ul>
+          </li>
+          <li>As a programming language</li>
+        </ul>
+      </li>
+      <li>4+1 view model
+        <ul>
+          <li>Logical Views
+            <ul>
+              <li>Funcitionality</li>
+              <li>Abstract descriptions of system partitions</li>
+              <li>Diagrams
+                <ul>
+                  <li>Classes</li>
+                  <li>Object</li>
+                  <li>State machine</li>
+                  <li>Interaction diagram</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Implementation view
+            <ul>
+              <li>Software management</li>
+              <li>Describes processes within system</li>
+              <li>Diagrams
+                <ul>
+                  <li>Activity Diagram</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Process View
+            <ul>
+              <li>Performance</li>
+              <li>Scalability</li>
+              <li>Throughput</li>
+              <li>Diagrams:
+                <ul>
+                  <li>Component or package</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Deployment view
+            <ul>
+              <li>System topology</li>
+              <li>Delivery, installation</li>
+              <li>Communication</li>
+              <li>Diagram:
+                <ul>
+                  <li>Deployment Diagrams</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+<strong>Use case view</strong>
+            <ul>
+              <li>Understandability</li>
+              <li>Usability</li>
+              <li>Describes functionality from perspective of outside world.</li>
+              <li>Diagrams:
+                <ul>
+                  <li>Use case, Descriptions</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="week-9">Week 9</h2>
+
+<ul>
+  <li>Design patterns
+    <ul>
+      <li>Creational
+        <ul>
+          <li>Singleton
+            <ul>
+              <li>Problem:
+                <ul>
+                  <li>Access a unique instance from anywhere</li>
+                </ul>
+              </li>
+              <li>Solution
+                <ul>
+                  <li>Singleton.</li>
+                </ul>
+              </li>
+              <li>Pros:
+                <ul>
+                  <li>Only one instance (low memory)</li>
+                  <li>lazy initialization</li>
+                </ul>
+              </li>
+              <li>Cons:
+                <ul>
+                  <li>Can’t subclass</li>
+                  <li>Synchronization problems</li>
+                  <li>No parameters to the constructor</li>
+                  <li>Difficult to test.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Factory
+            <ul>
+              <li>Generalization of object creation.</li>
+            </ul>
+          </li>
+          <li>Abstract Factory</li>
+          <li>Builder</li>
+          <li>Object Pool</li>
+          <li>Facade</li>
+          <li>Adapter</li>
+        </ul>
+      </li>
+      <li>Structural</li>
+      <li>Behavioral</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="configuration-administration">Configuration Administration</h2>
+
+<ul>
+  <li>Configuration Administration
+    <ul>
+      <li>Create Baseline</li>
+      <li>Track changes</li>
+      <li>Establish integrity</li>
+      <li>Basically:
+        <ul>
+          <li>Administration of all the work products, and tracking that all changes in one document are correctly reflected on other dependencies.</li>
+        </ul>
+      </li>
+      <li>View all</li>
+      <li>The Requirements Traceability Matrix (RTM)</li>
+      <li>Configuration elements
+        <ul>
+          <li>Logical groupings of work products</li>
+          <li>Ex:
+            <ul>
+              <li>Files</li>
+              <li>Documents</li>
+              <li>analyses</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Continuous Integration in Agile
+        <ul>
+          <li>Literally just continuously integrate lmao</li>
+          <li>need a central repo</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</body></html>
+
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/thoughts/2020-08-20">2020 08 20</a><br>
+        <div style="font-size: 0.9em">2020 08 20
+</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/thoughts/7th-semester">7th Semester</a><br>
+        <div style="font-size: 0.9em">7th Semester
+</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/thoughts/designing-data-intensive-applications">Designing Data Intensive Applications</a><br>
+        <div style="font-size: 0.9em">Designing Data-Intensive Applications
+</div>
+        </div>
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+
+<hr>
+
+<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+
+<link rel="stylesheet" href="/thoughts/styles.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"
+  integrity="sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg=="
+  crossorigin="anonymous"></script>
+
+<div id="graph-wrapper">
+  <script>
+    const MINIMAL_NODE_SIZE = 8;
+    const MAX_NODE_SIZE = 12;
+    const ACTIVE_RADIUS_FACTOR = 1.5;
+    const STROKE = 1;
+    const FONT_SIZE = 16;
+    const TICKS = 200;
+    const FONT_BASELINE = 40;
+    const MAX_LABEL_LENGTH = 50;
+
+    const graphData = {"edges":[{"source":"5188","target":"2999201619697069501634358623"},{"source":"322234889594959904287976177977333310","target":"2999201619697069501634358623"},{"source":"2999201619697069501634358623","target":"139364562788709894460"},{"source":"28588532718914019","target":"851959675378839870668214146935173903921656770713504310"},{"source":"851959675378839870668214146935173903921656770713504310","target":"138734357957655644665841381049197"},{"source":"156849270984","target":"14164651000280702137235454773983180365518714"},{"source":"28588532718914019","target":"14164651000280702137235454773983180365518714"},{"source":"30580185173690978251209839330823784984790960504123992","target":"14164651000280702137235454773983180365518714"},{"source":"28588532718914019","target":"29219254455833079817448874380493139516041658354"},{"source":"28588532718914019","target":"8321929263829500520001590617580"},{"source":"28588532718914019","target":"9568481444242231265272899075988"},{"source":"156849270984","target":"28588532718914019"},{"source":"851959675378839870668214146935173903921656770713504310","target":"28588532718914019"},{"source":"61377431968146851350","target":"28588532718914019"},{"source":"14164651000280702137235454773983180365518714","target":"28588532718914019"},{"source":"29219254455833079817448874380493139516041658354","target":"28588532718914019"},{"source":"8321929263829500520001590617580","target":"28588532718914019"},{"source":"9568481444242231265272899075988","target":"28588532718914019"},{"source":"30580185173690978251209839330823784984790960504123992","target":"28588532718914019"},{"source":"3113163156336982","target":"28588532718914019"},{"source":"139470821993759286144044303812","target":"32244691158976995"},{"source":"32244691158976995","target":"139470821993759286144044303812"},{"source":"2821131889669671427968544","target":"48922530849632797250"},{"source":"5184178749366653159163169043486126","target":"5184178749366653159163169043486126"},{"source":"1017130","target":"5184178749366653159163169043486126"},{"source":"19933540676606105509146638724513455248814","target":"5184178749366653159163169043486126"},{"source":"4846159064514930645808","target":"144746523937507619282891570418938"},{"source":"156849270984","target":"69390740316523005805421"},{"source":"60687409686190","target":"710990157"},{"source":"164376357054901097701","target":"1818066453030759790288"},{"source":"8425571591765325236194915769050","target":"2804328178771229520031834"},{"source":"156849270954","target":"369112424640144724099524049259611606349212"},{"source":"994473405622","target":"369112424640144724099524049259611606349212"},{"source":"1763762412024906028","target":"369112424640144724099524049259611606349212"},{"source":"5184178749366653159163169043486126","target":"994473405622"},{"source":"1763762412024906028","target":"994473405622"},{"source":"4846159064514930645808","target":"994473405622"},{"source":"661971381217685597538799694926473497603","target":"994473405622"},{"source":"3113163156336982","target":"27625501053"},{"source":"5188","target":"1763762412024906028"},{"source":"156849270948","target":"1763762412024906028"},{"source":"5184178749366653159163169043486126","target":"1763762412024906028"},{"source":"69390740316523005805421","target":"1763762412024906028"},{"source":"1017130","target":"1763762412024906028"},{"source":"112249223031179760904","target":"1763762412024906028"},{"source":"19933540676606105509146638724513455248814","target":"1763762412024906028"},{"source":"7280361401045307096321516310","target":"1763762412024906028"},{"source":"1656585590","target":"1763762412024906028"},{"source":"4846159064514930645808","target":"1763762412024906028"},{"source":"30580185173690978251209839330823784984790960504123992","target":"30580185173690978251209839330823784984790960504123992"},{"source":"112249223031179760904","target":"30580185173690978251209839330823784984790960504123992"},{"source":"156849270954","target":"1146488277592"},{"source":"5184178749366653159163169043486126","target":"1936017189498044194"},{"source":"7280361401045307096321516310","target":"1936017189498044194"},{"source":"994473405622","target":"6670398760433916529920290938924"},{"source":"1763762412024906028","target":"6670398760433916529920290938924"},{"source":"156849270948","target":"60687409686190"},{"source":"156849272286","target":"60687409686190"},{"source":"27625501053","target":"60687409686190"},{"source":"3113163156336982","target":"60687409686190"},{"source":"4846159064514930645808","target":"1017130"},{"source":"1818066453030759790288","target":"8425571591765325236194915769050"},{"source":"994473405622","target":"882917400369905601542465306151800315627585836"},{"source":"1763762412024906028","target":"882917400369905601542465306151800315627585836"},{"source":"369112424640144724099524049259611606349212","target":"241487729522082782712181165059"},{"source":"1763762412024906028","target":"112249223031179760904"},{"source":"30580185173690978251209839330823784984790960504123992","target":"112249223031179760904"},{"source":"5184178749366653159163169043486126","target":"19933540676606105509146638724513455248814"},{"source":"112249223031179760904","target":"19933540676606105509146638724513455248814"},{"source":"156849270948","target":"7280361401045307096321516310"},{"source":"2999201619697069501634358623","target":"7280361401045307096321516310"},{"source":"7911115959333522059653054041106570281","target":"7280361401045307096321516310"},{"source":"322234889594959904287976177977333310","target":"7280361401045307096321516310"},{"source":"69564937057126","target":"7280361401045307096321516310"},{"source":"1656585590","target":"7280361401045307096321516310"},{"source":"661971381217685597538799694926473497603","target":"7280361401045307096321516310"},{"source":"3880675842258417385","target":"7280361401045307096321516310"},{"source":"31321329","target":"5715803688430697516337046"},{"source":"5188","target":"1656585590"},{"source":"48922530849632797250","target":"2225540912812"},{"source":"994473405622","target":"4846159064514930645808"},{"source":"1763762412024906028","target":"4846159064514930645808"},{"source":"1017130","target":"4846159064514930645808"},{"source":"994473405622","target":"65732866111916601640207183698355406623923430483262320"},{"source":"1763762412024906028","target":"65732866111916601640207183698355406623923430483262320"},{"source":"322234889594959904287976177977333310","target":"137647653643972833609772"},{"source":"994473405622","target":"661971381217685597538799694926473497603"},{"source":"7911115959333522059653054041106570281","target":"3880675842258417385"},{"source":"1146488277592","target":"3880675842258417385"},{"source":"2999201619697069501634358623","target":"1384620"},{"source":"139364562788709894460","target":"1384620"},{"source":"851959675378839870668214146935173903921656770713504310","target":"1384620"},{"source":"7911115959333522059653054041106570281","target":"1384620"},{"source":"369112424640144724099524049259611606349212","target":"1384620"},{"source":"7280361401045307096321516310","target":"1384620"},{"source":"851959675378839870668214146935173903921656770713504310","target":"3113163156336982"},{"source":"61377431968146851350","target":"3113163156336982"},{"source":"14164651000280702137235454773983180365518714","target":"3113163156336982"},{"source":"29219254455833079817448874380493139516041658354","target":"3113163156336982"},{"source":"8321929263829500520001590617580","target":"3113163156336982"},{"source":"9568481444242231265272899075988","target":"3113163156336982"},{"source":"139470821993759286144044303812","target":"3113163156336982"},{"source":"60687409686190","target":"3113163156336982"},{"source":"2804328178771229520031834","target":"164376357054901097701"},{"source":"164376357054901097701","target":"164376357054901097701"}],"nodes":[{"id":"5188","path":"/thoughts/404","label":"404"},{"id":"156849270948","path":"/thoughts/2020-08-10","label":"2020 08 10"},{"id":"156849270954","path":"/thoughts/2020-08-16","label":"2020 08 16"},{"id":"156849270984","path":"/thoughts/2020-08-20","label":"2020 08 20"},{"id":"156849272284","path":"/thoughts/2020-09-24","label":"2020 09 24"},{"id":"156849272286","path":"/thoughts/2020-09-26","label":"2020 09 26"},{"id":"2999201619697069501634358623","path":"/thoughts/a-guide-to-being-human","label":"A Guide To Being Human"},{"id":"139364562788709894460","path":"/thoughts/tetrafarmakos","label":"Tetrafarmakos"},{"id":"851959675378839870668214146935173903921656770713504310","path":"/thoughts/administraci%C3%B3n-de-proyectos-de-ingenier%C3%ADa","label":"Administración De Proyectos De Ingeniería"},{"id":"138734357957655644665841381049197","path":"/thoughts/administration-project","label":"Administration Project"},{"id":"61377431968146851350","path":"/thoughts/cyber-security","label":"Cyber Security"},{"id":"14164651000280702137235454773983180365518714","path":"/thoughts/dise%C3%B1o-y-arquitectura-de-software","label":"Diseño Y Arquitectura De Software"},{"id":"29219254455833079817448874380493139516041658354","path":"/thoughts/literatura-mundial-contemporanea","label":"Literatura Mundial Contemporanea"},{"id":"8321929263829500520001590617580","path":"/thoughts/metodos-cuantitativos","label":"Metodos Cuantitativos"},{"id":"9568481444242231265272899075988","path":"/thoughts/programming-languages","label":"Programming Languages"},{"id":"28588532718914019","path":"/thoughts/7th-semester","label":"7th Semester"},{"id":"32244691158976995","path":"/thoughts/8th-semester","label":"8th Semester"},{"id":"139470821993759286144044303812","path":"/thoughts/dise%C3%B1o-de-compiladores","label":"Diseño De Compiladores"},{"id":"1799374978","path":"/thoughts/trauma","label":"Trauma"},{"id":"48922530849632797250","path":"/thoughts/about-this-site","label":"About This Site"},{"id":"5184178749366653159163169043486126","path":"/thoughts/artificial-intelligence","label":"Artificial Intelligence"},{"id":"144746523937507619282891570418938","path":"/thoughts/attention-architecture","label":"Attention Architecture"},{"id":"69390740316523005805421","path":"/thoughts/baseball-project","label":"Baseball Project"},{"id":"710990157","path":"/thoughts/brazil","label":"Brazil"},{"id":"1818066453030759790288","path":"/thoughts/cats","label":"A note about cats"},{"id":"7911115959333522059653054041106570281","path":"/thoughts/condensed-notes-on-free-will","label":"Condensed Notes On Free Will"},{"id":"2804328178771229520031834","path":"/thoughts/consistency","label":"Consistency is key"},{"id":"369112424640144724099524049259611606349212","path":"/thoughts/convolutional-neural-networks","label":"Convolutional Neural Networks"},{"id":"994473405622","path":"/thoughts/coursera","label":"Coursera"},{"id":"27625501053","path":"/thoughts/covid-19","label":"Covid 19"},{"id":"2821131889669671427968544","path":"/thoughts/creating-elements","label":"Creating Elements"},{"id":"1763762412024906028","path":"/thoughts/deep-learning","label":"Deep Learning"},{"id":"30580185173690978251209839330823784984790960504123992","path":"/thoughts/designing-data-intensive-applications","label":"Designing Data Intensive Applications"},{"id":"1146488277592","path":"/thoughts/emotions","label":"Emotions"},{"id":"1936017189498044194","path":"/thoughts/epistemology","label":"Epistemology"},{"id":"1228348228096","path":"/thoughts/foam-tips","label":"Foam Tips"},{"id":"6670398760433916529920290938924","path":"/thoughts/hyperparameter-tuning","label":"Hyperparameter Tuning"},{"id":"31321329","path":"/thoughts/inbox","label":"Inbox"},{"id":"114599682438088626488116","path":"/thoughts/intent-and-values","label":"Intent. And Values"},{"id":"60687409686190","path":"/thoughts/life-story","label":"Life Story"},{"id":"322234889594959904287976177977333310","path":"/thoughts/illusion-of-climate-change","label":"Illusion Of Climate Change"},{"id":"1017130","path":"/thoughts/lstm","label":"Lstm"},{"id":"1355333928","path":"/thoughts/mexico","label":"Mexico"},{"id":"8425571591765325236194915769050","path":"/thoughts/move-your-body-every-day","label":"Move your body every day"},{"id":"882917400369905601542465306151800315627585836","path":"/thoughts/neural-networks-and-deep-learning","label":"Neural Networks And Deep Learning"},{"id":"241487729522082782712181165059","path":"/thoughts/neural-style-transfer","label":"Neural Style Transfer"},{"id":"112249223031179760904","path":"/thoughts/notes-on-papers","label":"Notes On Papers"},{"id":"69564937057126","path":"/thoughts/on-poverty","label":"On Poverty"},{"id":"19933540676606105509146638724513455248814","path":"/thoughts/on-the-measure-of-intelligence","label":"On The Measure Of Intelligence"},{"id":"7280361401045307096321516310","path":"/thoughts/personal-philosophy","label":"Personal Philosophy"},{"id":"5715803688430697516337046","path":"/thoughts/purpose-of-society","label":"Purpose Of Society"},{"id":"1656585590","path":"/thoughts/readme","label":"Readme"},{"id":"2225540912812","path":"/thoughts/seedling","label":"Seedling"},{"id":"4846159064514930645808","path":"/thoughts/sequence-models","label":"Sequence Models"},{"id":"65732866111916601640207183698355406623923430483262320","path":"/thoughts/structuring-machine-learning-projects","label":"Structuring Machine Learning Projects"},{"id":"137647653643972833609772","path":"/thoughts/mexican-politics","label":"Mexican Politics"},{"id":"661971381217685597538799694926473497603","path":"/thoughts/the-modern-and-the-postmodern","label":"The Modern And The Postmodern"},{"id":"3880675842258417385","path":"/thoughts/theory-of-mind","label":"Theory Of Mind"},{"id":"1384620","path":"/thoughts/todo","label":"Todo"},{"id":"3113163156336982","path":"/thoughts/university","label":"University"},{"id":"164376357054901097701","path":"/thoughts/your-first-note","label":"Your first seed"}]}
+    let nodesData = graphData.nodes;
+    let linksData = graphData.edges;
+
+    const nodeSize = {};
+
+    const updateNodeSize = () => {
+      nodesData.forEach((el) => {
+        let weight =
+          3 *
+          Math.sqrt(
+            linksData.filter((l) => l.source === el.id || l.target === el.id)
+              .length + 1
+          );
+        if (weight < MINIMAL_NODE_SIZE) {
+          weight = MINIMAL_NODE_SIZE;
+        } else if (weight > MAX_NODE_SIZE) {
+          weight = MAX_NODE_SIZE;
+        }
+        nodeSize[el.id] = weight;
+      });
+    };
+
+    const onClick = (d) => {
+      window.location = d.path
+    };
+
+    const onMouseover = function (d) {
+      const relatedNodesSet = new Set();
+      linksData
+        .filter((n) => n.target.id == d.id || n.source.id == d.id)
+        .forEach((n) => {
+          relatedNodesSet.add(n.target.id);
+          relatedNodesSet.add(n.source.id);
+        });
+
+      node.attr("class", (node_d) => {
+        if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
+          return "inactive";
+        }
+        return "";
+      });
+
+      link.attr("class", (link_d) => {
+        if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
+          return "inactive";
+        }
+        return "";
+      });
+
+      link.attr("stroke-width", (link_d) => {
+        if (link_d.source.id === d.id || link_d.target.id === d.id) {
+          return STROKE * 4;
+        }
+        return STROKE;
+      });
+      text.attr("class", (text_d) => {
+        if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
+          return "inactive";
+        }
+        return "";
+      });
+    };
+
+    const onMouseout = function (d) {
+      node.attr("class", "");
+      link.attr("class", "");
+      text.attr("class", "");
+      link.attr("stroke-width", STROKE);
+    };
+
+    const sameNodes = (previous, next) => {
+      if (next.length !== previous.length) {
+        return false;
+      }
+
+      const map = new Map();
+      for (const node of previous) {
+        map.set(node.id, node.label);
+      }
+
+      for (const node of next) {
+        const found = map.get(node.id);
+        if (!found || found !== node.title) {
+          return false;
+        }
+      }
+
+      return true;
+    };
+
+    const sameEdges = (previous, next) => {
+      if (next.length !== previous.length) {
+        return false;
+      }
+
+      const set = new Set();
+      for (const edge of previous) {
+        set.add(`${edge.source.id}-${edge.target.id}`);
+      }
+
+      for (const edge of next) {
+        if (!set.has(`${edge.source}-${edge.target}`)) {
+          return false;
+        }
+      }
+
+      return true;
+    };
+
+    const graphWrapper = document.getElementById('graph-wrapper')
+    const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+    element.setAttribute("height", window.innerHeight * 0.8);
+    graphWrapper.appendChild(element);
+
+    const reportWindowSize = () => {
+      element.setAttribute("width", window.innerWidth);
+      element.setAttribute("height", window.innerHeight);
+    };
+
+    window.onresize = reportWindowSize;
+
+    const svg = d3.select("svg");
+    const width = Number(svg.attr("width"));
+    const height = Number(svg.attr("height"));
+    let zoomLevel = 1;
+
+    const simulation = d3
+      .forceSimulation(nodesData)
+      .force("forceX", d3.forceX().x(width / 2))
+      .force("forceY", d3.forceY().y(height / 2))
+      .force("charge", d3.forceManyBody())
+      .force(
+        "link",
+        d3
+          .forceLink(linksData)
+          .id((d) => d.id)
+          .distance(70)
+      )
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("collision", d3.forceCollide().radius(80))
+      .stop();
+
+    const g = svg.append("g");
+    let link = g.append("g").attr("class", "links").selectAll(".link");
+    let node = g.append("g").attr("class", "nodes").selectAll(".node");
+    let text = g.append("g").attr("class", "text").selectAll(".text");
+
+    const resize = () => {
+      if (d3.event) {
+        const scale = d3.event.transform;
+        zoomLevel = scale.k;
+        g.attr("transform", scale);
+      }
+
+      const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
+
+      const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+      text.attr("font-size", (d) => font);
+      text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
+      link.attr("stroke-width", zoomOrKeep(STROKE));
+      node.attr("r", (d) => {
+        return zoomOrKeep(nodeSize[d.id]);
+      });
+      svg
+        .selectAll("circle")
+        .filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
+        .attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
+
+      document.getElementById("zoom").innerHTML = zoomLevel.toFixed(2);
+    };
+
+    const ticked = () => {
+      node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+      text
+        .attr("x", (d) => d.x)
+        .attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+      link
+        .attr("x1", (d) => d.source.x)
+        .attr("y1", (d) => d.source.y)
+        .attr("x2", (d) => d.target.x)
+        .attr("y2", (d) => d.target.y);
+    };
+
+    const restart = () => {
+      updateNodeSize();
+      node = node.data(nodesData, (d) => d.id);
+      node.exit().remove();
+      node = node
+        .enter()
+        .append("circle")
+        .attr("r", (d) => {
+          return nodeSize[d.id];
+        })
+        .on("click", onClick)
+        .on("mouseover", onMouseover)
+        .on("mouseout", onMouseout)
+        .merge(node);
+
+      link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+      link.exit().remove();
+      link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
+
+      text = text.data(nodesData, (d) => d.label);
+      text.exit().remove();
+      text = text
+        .enter()
+        .append("text")
+        .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+        .attr("font-size", `${FONT_SIZE}px`)
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "central")
+        .on("click", onClick)
+        .on("mouseover", onMouseover)
+        .on("mouseout", onMouseout)
+        .merge(text);
+
+      node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+      text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+      simulation.nodes(nodesData);
+      simulation.force("link").links(linksData);
+      simulation.alpha(1).restart();
+      simulation.stop();
+
+      for (let i = 0; i < TICKS; i++) {
+        simulation.tick();
+      }
+
+      ticked();
+    };
+
+    const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+
+    zoomHandler(svg);
+    restart();
+
+    function isCurrentPath(notePath) {
+      return window.location.pathname.includes(notePath)
+    }
+
+    function shorten(str, maxLen, separator = ' ') {
+      if (str.length <= maxLen) return str;
+      return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+    }
+  </script>
+</div>
+</main>
+      <footer>Made with love by Alan Macedo Esparza, C. 2021</footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      iframe.src = event.target.href
+      iframe.onload = function() {
+        tooltipContentHtml = ''
+        tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+        tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+        tooltipContent.innerHTML = tooltipContentHtml
+
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+  </body>
+</html>
