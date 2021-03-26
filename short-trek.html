@@ -3,12 +3,12 @@
   <head>
   <meta charset="UTF-8">
 
-  <link rel="canonical" href="/sequence-models" />
+  <link rel="canonical" href="/short-trek" />
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Sequence Models">
+  <meta name="description" content="These are notes which are short explorations into a topic, [[creating elements]] is a good example.">
 
   <meta property="og:site_name" content="My digital garden">
 
@@ -17,11 +17,11 @@
   <link rel="stylesheet" href="/thoughts/styles.css">
 
   
-  <meta property="og:description" content="Sequence Models"/>
+  <meta property="og:description" content="These are notes which are short explorations into a topic, [[creating elements]] is a good example."/>
   
 
   
-  <meta property="og:title" content="Sequence Models">
+  <meta property="og:title" content="Short Trek">
   <meta property="og:type" content="article">
   
 
@@ -30,13 +30,13 @@
   <meta property="article:author" content="/">
   
 
-  <meta property="og:url" content="/sequence-models" />
+  <meta property="og:url" content="/short-trek" />
 
   
 
   <title>
     
-      Sequence Models &mdash; My digital garden
+      Short Trek &mdash; My digital garden
     
   </title>
 </head>
@@ -49,9 +49,9 @@
     <div class="wrapper">
       <main><article>
   <div>
-    <h1>Sequence Models</h1>
-    <time datetime="2021-03-15T23:36:59-06:00">
-      Last updated on March 15, 2021
+    <h1>Short Trek</h1>
+    <time datetime="2021-03-23T00:50:29-06:00">
+      Last updated on March 23, 2021
       
     </time>
   </div>
@@ -60,41 +60,12 @@
     <content>
       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
-<h1 id="sequence-models">Sequence Models</h1>
+<p>These are notes which are short explorations into a topic, <a class="internal-link" href="/thoughts/creating-elements">creating elements</a> is a good example.</p>
 
-<p>tags : <a class="internal-link" href="/thoughts/coursera">coursera</a> <a class="internal-link" href="/thoughts/deep-learning">Deep Learning</a></p>
-
-<p>Traditional neural networks have a very obvious problem: <em>they can’t easily process sequence data</em>. Worse still, they can’t deal easily - or at all without re-training - with variably sized inputs.</p>
-
-<p>The analogy to code is simple: sequential code vs looping code, which can deal with repetition.</p>
-
-<p>The solution is equally simple, although not obvious: use the same model several times in a row, to process each individual time-step in the sequence. Although this approach works, it has a few problems:</p>
-
-<ol>
-  <li>Long-range text dependencies are difficult.</li>
-  <li>Vanishing/Exploding Gradients.
-    <ul>
-      <li>Remember, even if your RNN unit only has 1 layer, if your input has 100 time-steps, that’s equivalent to a 100 layer-deep network. It’s difficult to propagate the Loss so far.</li>
-    </ul>
-  </li>
-  <li>It’s hard to use information after the current time-step
-    <ul>
-      <li>For example, in the name “Teddy Roosevelt”, it’s tough to know if “Teddy” is a name or a type of bear, without seeing what comes after.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>In order, various solutions have been devised:</p>
-
-<ul>
-  <li>For problems 1 &amp; 2, there are architectures such as <span title="There is no note that matches this link." class="invalid-link">
-<span class="invalid-link-brackets">[[</span>
-GRU
-<span class="invalid-link-brackets">]]</span></span> or <a class="internal-link" href="/thoughts/lstm">LSTM</a>. One of the best solutions (from what I know) is the <a class="internal-link" href="/thoughts/attention-architecture">Attention Architecture</a>
-</li>
-  <li>For problem 3, Bi-directional RNNs exist. The attention architecture also deals with this.</li>
-</ul>
-
+<p>These are notes which are complete, but not long or important enough for <span title="There is no note that matches this link." class="invalid-link">
+  <span class="invalid-link-brackets">[[</span>
+  evergreen
+  <span class="invalid-link-brackets">]]</span></span> status.</p>
 </body></html>
 
     </content>
@@ -105,20 +76,8 @@ GRU
       <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
       
         <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/coursera">Coursera</a><br>
-        <div style="font-size: 0.9em">Coursera
-</div>
-        </div>
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/deep-learning">Deep Learning</a><br>
-        <div style="font-size: 0.9em">Deep Learning
-</div>
-        </div>
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/lstm">Lstm</a><br>
-        <div style="font-size: 0.9em">LSTM
+        <a class="internal-link" href="/thoughts/creating-elements">Creating Elements</a><br>
+        <div style="font-size: 0.9em">topic: [[short trek]]
 </div>
         </div>
       
