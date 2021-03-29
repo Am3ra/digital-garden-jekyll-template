@@ -3,27 +3,38 @@
 
 # Inbox
 
-- Ethical imperative for Ethical action
-  - Weird name
-  - What's the difference between causing and allowing?
-  - [stanford link](https://plato.stanford.edu/entries/doing-allowing/)
-    - Passive vs active euthanasia
-  - even little action is better than no action
-  - Role of political/ethical activism.
-    - inconvenience.
+- [[Ethical imperative for Ethical action]]
+	- Weird name
+	- What's the difference between causing and allowing?
+	- [stanford link](https://plato.stanford.edu/entries/doing-allowing/)
+		- Passive vs active euthanasia
+	- even little action is better than no action
+	- Role of political/ethical activism.
+		- inconvenience.
+	- What is should (objective basis for morality)
 - [[Purpose of society]]
-  - Why not live alone?
-  - Role of society
-    - Oppression? -> investigate further
-    - Monopoly on violence (usually)
-    - Public good services
-      - Fire
-      - Health
-      - ?
-  - Difference between purpose and role
-    - Health promise
-    - Shelter
+	- ROUSSEAU [[the modern and the postmodern]]
+		- Role of nature
+			- What is natural? Is it good?
+		- Inequality Caused by society
+			- Types of inequality
+		- State as protector iof the rich
+		- Arts and sciences as hiding of inequality
+		- [ ] [[Discourse on Inequality]] Notes on papers
+	- Role
+	- Why not live alone?
+	- Role of society
+		- Oppression? -> investigate further
+		- Monopoly on violence (usually)
+		- Public good services
+		- Fire
+		- Health
+		- ?
+	- Difference between purpose and role
+		- Health promise
+		- Shelter
 - Shuffering and shmiling
-  - Shufrir y shonreir
+	- Shufrir y shonreir
 - Immigration
 	- What are the impacts	?
+- How much is your life worth? Is it worth another's life? an animals? Your values?
