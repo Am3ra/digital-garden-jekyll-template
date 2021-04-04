@@ -1,3 +1,6 @@
+---
+---
+
 part of my studying of [[deep learning]].
 
 - [Lesson 3 Production and Deployment](#lesson-3-production-and-deployment)
