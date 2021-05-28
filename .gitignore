@@ -16,3 +16,4 @@ _includes/notes_graph.json
 
 node_modules/**/*
 _site/*
+.vscode/tasks.json
