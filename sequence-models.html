@@ -26,7 +26,7 @@
   
 
   
-  <meta property="article:published_time" content="2021-06-02T16:18:26-05:00">
+  <meta property="article:published_time" content="2021-06-02T16:31:32-05:00">
   <meta property="article:author" content="/">
   
 
@@ -55,45 +55,7 @@
 		</time>
 		
 		<p>
-			This article will take <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<h1 id="sequence-models">Sequence Models</h1>
-
-<p>tags : <a class="internal-link" href="/thoughts/coursera">coursera</a> <a class="internal-link" href="/thoughts/deep-learning">Deep Learning</a></p>
-
-<p>Traditional neural networks have a very obvious problem: <em>they can’t easily process sequence data</em>. Worse still, they can’t deal easily - or at all without re-training - with variably sized inputs.</p>
-
-<p>The analogy to code is simple: sequential code vs looping code, which can deal with repetition.</p>
-
-<p>The solution is equally simple, although not obvious: use the same model several times in a row, to process each individual time-step in the sequence. Although this approach works, it has a few problems:</p>
-
-<ol>
-  <li>Long-range text dependencies are difficult.</li>
-  <li>Vanishing/Exploding Gradients.
-    <ul>
-      <li>Remember, even if your RNN unit only has 1 layer, if your input has 100 time-steps, that’s equivalent to a 100 layer-deep network. It’s difficult to propagate the Loss so far.</li>
-    </ul>
-  </li>
-  <li>It’s hard to use information after the current time-step
-    <ul>
-      <li>For example, in the name “Teddy Roosevelt”, it’s tough to know if “Teddy” is a name or a type of bear, without seeing what comes after.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>In order, various solutions have been devised:</p>
-
-<ul>
-  <li>For problems 1 &amp; 2, there are architectures such as <span title="There is no note that matches this link." class="invalid-link">
-<span class="invalid-link-brackets">[[</span>
-GRU
-<span class="invalid-link-brackets">]]</span></span> or <a class="internal-link" href="/thoughts/lstm">LSTM</a>. One of the best solutions (from what I know) is the <a class="internal-link" href="/thoughts/attention-architecture">Attention Architecture</a>
-</li>
-  <li>For problem 3, Bi-directional RNNs exist. The attention architecture also deals with this.</li>
-</ul>
-
-</body></html>
- minutes to read.
+			This article will take 1 minute to read.
 		</p>
 	</div>
 

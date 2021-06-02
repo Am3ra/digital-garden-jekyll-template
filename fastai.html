@@ -26,7 +26,7 @@
   
 
   
-  <meta property="article:published_time" content="2021-06-02T16:18:26-05:00">
+  <meta property="article:published_time" content="2021-06-02T16:31:32-05:00">
   <meta property="article:author" content="/">
   
 
@@ -55,82 +55,7 @@
 		</time>
 		
 		<p>
-			This article will take <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>part of my studying of <a class="internal-link" href="/thoughts/deep-learning">deep learning</a>.</p>
-
-<ul>
-  <li>
-<a href="#lesson-3-production-and-deployment" target="blank">Lesson 3 Production and Deployment</a>
-    <ul>
-      <li>
-<a href="#deployment" target="blank">Deployment</a>
-        <ul>
-          <li><a href="#deploy-to-mobile" target="blank">Deploy to mobile</a></li>
-          <li><a href="#how-to-deploy" target="blank">How to deploy:</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>TODO:</p>
-<ul class="task-list">
-  <li class="task-list-item">
-<input type="checkbox" class="task-list-item-checkbox" disabled>Create simple end-to-end app</li>
-</ul>
-
-<h2 id="lesson-3-production-and-deployment">Lesson 3 Production and Deployment</h2>
-
-<p>DataBlocks go before a dataloaders?</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bear</span> <span class="o">=</span> <span class="n">bears</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">item_tfms</span><span class="o">=</span><span class="n">Resize</span><span class="p">(</span><span class="mi">128</span><span class="p">),</span> <span class="n">batch_tfms</span><span class="o">=</span><span class="n">aug_transforms</span><span class="p">(</span><span class="n">mult</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
-<span class="n">dls</span> <span class="o">=</span> <span class="n">bears</span><span class="p">.</span><span class="n">dataloaders</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
-<span class="n">dls</span><span class="p">.</span><span class="n">train</span><span class="p">.</span><span class="n">show_batch</span><span class="p">(</span><span class="n">max_n</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>So create a datablock, then create a dataloaders with it? Then you can train the loaded data? I geuss.</p>
-
-<p>It’s much easier to clean data <em>after</em> you train your model. This allows you to quickly find <em>least confident</em> elements and remove or move them.
-FastAI does this with the ImageClassifierCleaner, which takes a learner as an argument.</p>
-
-<h3 id="deployment">Deployment</h3>
-
-<p>Trained models  can be exported to a <code class="language-plaintext highlighter-rouge">.pkl</code>, which is basically all the information of the model.
-This <code class="language-plaintext highlighter-rouge">.pkl</code> file can later be imported, and used to predict.</p>
-
-<p>You can serve your Jupyter notebooks online! you can use Voila to build it, and Binder to run it.</p>
-
-<h4 id="deploy-to-mobile">Deploy to mobile</h4>
-
-<p>Deploy to server, and serve on mobile, it’s easier.</p>
-
-<h4 id="how-to-deploy">How to deploy:</h4>
-
-<ol>
-  <li>Manual Process
-    <ol>
-      <li>Run model in parallel with normal systems</li>
-      <li>Humans check every prediction</li>
-    </ol>
-  </li>
-  <li>Limited scope deployment
-    <ol>
-      <li>careful human supervision</li>
-      <li>Time and/or geography limited</li>
-    </ol>
-  </li>
-  <li>Gradual Expansion
-    <ol>
-      <li>Good reporting systems needed</li>
-      <li>Consider what could go wrong</li>
-    </ol>
-  </li>
-</ol>
-
-<p>Beware feedback loops -&gt; especially with models whose predictions affect their future inputs.</p>
-</body></html>
- minutes to read.
+			This article will take 1 minute to read.
 		</p>
 	</div>
 

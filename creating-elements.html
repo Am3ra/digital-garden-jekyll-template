@@ -26,7 +26,7 @@
   
 
   
-  <meta property="article:published_time" content="2021-06-02T16:18:26-05:00">
+  <meta property="article:published_time" content="2021-06-02T16:31:32-05:00">
   <meta property="article:author" content="/">
   
 
@@ -55,98 +55,7 @@
 		</time>
 		
 		<p>
-			This article will take <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>topic: <a class="internal-link" href="/thoughts/short-trek">short trek</a></p>
-
-<p>this is an attempt at cataloguing my recent foray into web components. 
-This is a note referencing <a class="internal-link" href="/thoughts/about-this-site">about this site</a></p>
-
-<p>Recently, I’ve begun to look into jekyll includes, and how to use them to, well, <em>include</em> new components such as popups into my jekyll pages.
-Thinking of that, I finally stumbled onto <a href="https://daverupert.com/2017/07/jekyll-includes-are-cool/" target="blank"><em>This Site</em></a>, which opened a whole new world to me.
-Looking at this, I want to experiment more with Polymer, a web components library built by google.
-<a href="https://blog.webjeda.com/integrate-polymer-jekyll/" target="blank">This seems to be a workable tutorial.</a></p>
-
-<p>Lets import and use a component.</p>
-
-<p>Extending Include Components in Jekyll - Bjorn Lu](https://bjornlu.com/blog/extending-include-components-in-jekyll</p>
-
-<p><a href="https://daverupert.com/2017/07/jekyll-includes-are-cool/" target="blank">Jekyll Includes are Cool - daverupert.comdaverupert.com</a>
-<!-- <script async src="https://unpkg.com/es-module-shims@0.10.1/dist/es-module-shims.js"></script
-<script type="module" src="https://cdn.jsdelivr.net/npm/lit-element@2.4.0/lit-element.min.js"></script>
-<script type="module" src="./components/my-element.js"></script> --></p>
-<my-element mood="awesome"></my-element>
-
-<p>Most of the issues I’ve had boil down to avoiding installing npm in this repo, as I don’t want to increase the stack.
-I’m Working on including CDNs to provide the <code class="language-plaintext highlighter-rouge">JS</code>.</p>
-
-<p>Having given up on creating my own component, I’ll now try to simply use a library:</p>
-
-<!-- <script type="module">
-      import './node_modules/@polymer/paper-fab/paper-fab.js';
-    //   import './node_modules/@polymer/iron-icons/iron-icons.html';
-    </script>
-<paper-fab icon="favorite"></paper-fab>
-<paper-fab label="😻"></paper-fab> -->
-
-<p>Big woof.</p>
-
-<p>Modern components libraries are migrating to using package name imports, rather than path-to-package named imports. This is rather problematic, given that I’ve been getting a bunch of <code class="language-plaintext highlighter-rouge">Relative module specifiers must start with “./”, “../” or “/”.</code> while using <code class="language-plaintext highlighter-rouge">polymer</code>, a pretty interesting web components library.</p>
-
-<p>Your can read more about this <a href="https://www.polymer-project.org/blog/2018-02-26-3.0-preview-paths-and-names" target="blank">here.</a></p>
-
-<p>Don’t know what to do now, I don’t want to double down and add yet <em>another</em> piece to my current software stack. Jekyll and <code class="language-plaintext highlighter-rouge">JGD</code> are more than enough for me right now. Don’t want to add another build process to elements.</p>
-
-<p>Let’s try this again with hybridsJS:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"module"</span><span class="nt">&gt;</span>
-  <span class="k">import</span> <span class="p">{</span> <span class="nx">html</span><span class="p">,</span> <span class="nx">define</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">https://unpkg.com/hybrids@^5</span><span class="dl">'</span><span class="p">;</span>
-  
-  <span class="kd">function</span> <span class="nx">increaseCount</span><span class="p">(</span><span class="nx">host</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">host</span><span class="p">.</span><span class="nx">count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="kd">const</span> <span class="nx">SimpleCounter</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">count</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="na">render</span><span class="p">:</span> <span class="p">({</span> <span class="nx">count</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="nx">html</span><span class="s2">`
-      &lt;button onclick="</span><span class="p">${</span><span class="nx">increaseCount</span><span class="p">}</span><span class="s2">"&gt;
-        Count: </span><span class="p">${</span><span class="nx">count</span><span class="p">}</span><span class="s2">
-      &lt;/button&gt;
-    `</span><span class="p">,</span>
-  <span class="p">};</span>
-
-  <span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">simple-counter</span><span class="dl">'</span><span class="p">,</span> <span class="nx">SimpleCounter</span><span class="p">);</span>
-<span class="nt">&lt;/script&gt;</span>
-
-<span class="nt">&lt;simple-counter</span> <span class="na">count=</span><span class="s">"10"</span><span class="nt">&gt;&lt;/simple-counter&gt;</span>
-</code></pre></div></div>
-
-<script type="module">
-  import { html, define } from 'https://unpkg.com/hybrids@^5';
-  
-  function increaseCount(host) {
-    host.count += 1;
-  }
-
-  const SimpleCounter = {
-    count: 0,
-    render: ({ count }) => html`
-      <button onclick="${increaseCount}">
-        Count: ${count}
-      </button>
-    `,
-  };
-
-  define('simple-counter', SimpleCounter);
-</script>
-
-<simple-counter count="10"></simple-counter>
-
-<p>Success! A simple counter has been implemented and included! HybridsJS has been the simplest to include, though not installed via npm as the other attempts. Wonder if it would hold up.</p>
-
-<p>Anyways, after a couple of days of pulling hair, this was by far the simplest solutions, so this is me signing off! Send me a message if you want to ask about anything!</p>
-</body></html>
- minutes to read.
+			This article will take 2 minutes to read.
 		</p>
 	</div>
 
