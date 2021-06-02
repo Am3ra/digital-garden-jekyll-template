@@ -26,7 +26,7 @@
   
 
   
-  <meta property="article:published_time" content="2021-06-02T16:08:34-05:00">
+  <meta property="article:published_time" content="2021-06-02T16:18:26-05:00">
   <meta property="article:author" content="/">
   
 
@@ -48,17 +48,14 @@
 </nav>
     <div class="wrapper">
       <main><article>
-  <div>
-    <h1>Diseño Y Arquitectura De Software</h1>
-    <time datetime="2021-01-31T02:23:18-06:00">
-      Last updated on January 31, 2021
-      
-    </time>
-  </div>
-
-  <div id="notes-entry-container">
-    <content>
-      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+	<div>
+		<h1>Diseño Y Arquitectura De Software</h1>
+		<time datetime="2021-01-31T02:23:18-06:00"
+			> Last updated on January 31, 2021 
+		</time>
+		
+		<p>
+			This article will take <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
 <h1 id="diseño-y-arquitectura-de-software">Diseño Y Arquitectura De Software</h1>
 
@@ -634,41 +631,644 @@
 </ul>
 
 </body></html>
+ minutes to read.
+		</p>
+	</div>
 
-    </content>
+	<div id="notes-entry-container">
+		<content> <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h1 id="diseño-y-arquitectura-de-software">Diseño Y Arquitectura De Software</h1>
 
-    <side style="font-size: 0.9em">
-      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
-      
-      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/2020-08-20">2020 08 20</a><br>
-        <div style="font-size: 0.9em">2020 08 20
-</div>
-        </div>
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/designing-data-intensive-applications">Designing Data Intensive Applications</a><br>
-        <div style="font-size: 0.9em">Designing Data-Intensive Applications
-</div>
-        </div>
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/7th-semester">7th Semester</a><br>
-        <div style="font-size: 0.9em">7th Semester
-</div>
-        </div>
-      
-      </div>
-      
-    </side>
-  </div>
+<p>Tags: <a class="internal-link" href="/thoughts/7th-semester">7th semester</a> <a class="internal-link" href="/thoughts/university">university</a></p>
+
+<h2 id="what-is-software-architecture">What is Software architecture?</h2>
+
+<ul>
+  <li>Software Architecture
+    <ul>
+      <li>An abstraction of the implementation</li>
+      <li>Every software system has an Architecture</li>
+      <li>Architecture includes behavior.</li>
+      <li>Structures
+        <ul>
+          <li>A structure is a set of elements themselves, as they exist in software or hardware.</li>
+          <li>Types of structures:
+            <ul>
+              <li>Modules
+                <ul>
+                  <li>Major partitions of elements, like MVC</li>
+                </ul>
+              </li>
+              <li>Component and Connector (C&amp;C)
+                <ul>
+                  <li>Focus on the way that elements interact with each-other</li>
+                  <li>dynamic</li>
+                  <li>runtime structures</li>
+                </ul>
+              </li>
+              <li>Allocation structure
+                <ul>
+                  <li>mapping from software structures to the system’s organizational, developmental, installation, and execution environments.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Views
+        <ul>
+          <li>A representation of a coherent set of architectural elements, as written and read by system stakeholders.</li>
+          <li>It is a representation of a set of elements, and the relation between them.</li>
+          <li>In short, a view is a representation of a structure</li>
+        </ul>
+      </li>
+      <li>Architecture as a set of Structures
+        <ul>
+          <li>Software systems are sets of structures, with relations between them.</li>
+          <li>No single structure is the architecture</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Software Architect
+    <ul>
+      <li>Technical Knowledge</li>
+      <li>Leadership and communication
+        <ul>
+          <li>Effectively communicate ideas to stakeholders</li>
+          <li>Collaboration</li>
+          <li>Translation (business to technical)</li>
+        </ul>
+      </li>
+      <li>Business Domain Knowledge
+        <ul>
+          <li>Architecture that fits domain.</li>
+          <li>Business trends.</li>
+          <li>Communication with business people.</li>
+        </ul>
+      </li>
+      <li>Methodology and strategy
+        <ul>
+          <li>Which methodology?
+            <ul>
+              <li>Scrum</li>
+              <li>Agile</li>
+              <li>Waterfall</li>
+              <li>etc</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Software vs. System vs. Enterprise
+    <ul>
+      <li>Software is the smallest scope of the three.</li>
+      <li>System includes software.</li>
+      <li>Enterprise includes system architecture.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="object-oriented-programming">Object oriented programming</h2>
+
+<ul>
+  <li>Encapsulation
+    <ul>
+      <li>Objects try to keep state private. (Try.)</li>
+    </ul>
+  </li>
+  <li>Abstraction
+    <ul>
+      <li>Hide complexities of internal operation</li>
+    </ul>
+  </li>
+  <li>Inheritance
+    <ul>
+      <li>Avoid repeating code by inheriting methods from parent classes.</li>
+    </ul>
+  </li>
+  <li>Polymorphism
+    <ul>
+      <li>Use a variable that is of a parent type, to call the same method from any type of child class.</li>
+    </ul>
+  </li>
+  <li>Abstract Classes and Interfaces
+    <ul>
+      <li>Interface is a contract to be fulfilled by classes that inherit.
+        <ul>
+          <li>All methods are abstract</li>
+        </ul>
+      </li>
+      <li>Abstract classes are abstract.
+        <ul>
+          <li>Only some (&gt;1) methods are abstract — some are concrete.</li>
+        </ul>
+      </li>
+      <li>Neither can be instantiated</li>
+    </ul>
+  </li>
+  <li>Association
+    <ul>
+      <li>Relation between classes.</li>
+      <li>Composition
+        <ul>
+          <li>Describes a class with a <em>has-a</em> relationship to another classes.
+            <ul>
+              <li>A car <em>has an</em> engine, it is not one.</li>
+            </ul>
+          </li>
+          <li>Restricted form of aggregation.</li>
+          <li>Implies one can’t exist without the other.</li>
+        </ul>
+      </li>
+      <li>Aggregation
+        <ul>
+          <li>Relationship where two entities are highly dependent of eachother.</li>
+          <li>represents <em>part-of</em> relationship</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="solid-principles">SOLID principles</h2>
+
+<ul>
+  <li>Single Responsibility
+    <ul>
+      <li>A class must have only one reason to change - single responsibility</li>
+    </ul>
+  </li>
+  <li>Open/Closed design
+    <ul>
+      <li>software entities (classes, modules, functions, etc.) must be opened for an extension, but closed for modification</li>
+      <li>Basically, every time you want to extend it, shouldn’t have to change the code.
+        <ul>
+          <li>Shape area() example</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Liskov Substitution Principle
+    <ul>
+      <li>subtypes should be replaceable by their base types</li>
+      <li>Basically, you should be able to replace Peugeot with Car</li>
+    </ul>
+  </li>
+  <li>Interface Segregation principle
+    <ul>
+      <li>many specific interfaces are better than a general interface</li>
+      <li>Make more specific interfaces that only do what they need to</li>
+    </ul>
+  </li>
+  <li>Dependency Inversion Principle
+    <ul>
+      <li>Depend on abstractions and not on concrete classes
+        <ul>
+          <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
+          <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Other important principles:</p>
+
+<ul>
+  <li>Law of Demeter
+    <ul>
+      <li>Call only friends</li>
+      <li>Don’t chain method calls:
+        <ul>
+          <li>Connection.getDriver( ).getName()</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Hollywood Principle
+    <ul>
+      <li>Don’t Call Us, We’ll Call you</li>
+      <li>Observer Pattern.</li>
+    </ul>
+  </li>
+  <li>KISS</li>
+  <li>YAGNI
+    <ul>
+      <li>Only code what you need</li>
+      <li>Don’t assume to know what you <em>will</em> need.</li>
+    </ul>
+  </li>
+  <li>DRY</li>
+</ul>
+
+<h2 id="architecture-quality">Architecture Quality</h2>
+
+<ul>
+  <li>Sample Application
+    <ul>
+      <li>Why are we seeing this UML diagram…</li>
+    </ul>
+  </li>
+  <li>Architecture Quality:
+    <ul>
+      <li>Depends on many Factors
+        <ul>
+          <li>Skill</li>
+          <li>Time</li>
+          <li>Legacy Dependencies</li>
+          <li>Time</li>
+          <li>Risk tolerance</li>
+          <li>Regulatory Constraint.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Architecture Factors:
+    <ul>
+      <li>Reliability
+        <ul>
+          <li>High Accuracy</li>
+          <li>Low Accuracy puts the organization at risk.</li>
+          <li>Performs function user expected</li>
+          <li><strong>System should continue performing correctly in face of adversity</strong></li>
+          <li>Can tolerate Mistakes
+            <ul>
+              <li>Types of mistakes:
+                <ul>
+                  <li>HW</li>
+                  <li>SW</li>
+                  <li>Human</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>What can we do:
+            <ul>
+              <li>Design to minimize opportunities for error.</li>
+              <li>Decouple places where mistakes happen and where mistakes can cause failure.</li>
+              <li>Test thoroughly.</li>
+            </ul>
+          </li>
+          <li>Chaos Monkey + Netflix</li>
+        </ul>
+      </li>
+      <li>Scalability
+        <ul>
+          <li>Ability to meet growth requirements.</li>
+          <li>“If the system grows in a particular way, what are our options for coping with the growth?”</li>
+          <li>Coping Mechanisms
+            <ul>
+              <li>Horizontal scalability
+                <ul>
+                  <li>adding more resources to logical units, such as adding another server to a cluster of servers</li>
+                  <li>Add more units (more buses)</li>
+                </ul>
+              </li>
+              <li>Vertical scalability
+                <ul>
+                  <li>Adding more resources to physical units</li>
+                  <li>Improve Units (better buses)</li>
+                </ul>
+              </li>
+              <li>Load Balancing
+                <ul>
+                  <li>Spread traffic across cluster of servers</li>
+                  <li>Keep track of statuses</li>
+                  <li>Load balancing Metrics:
+                    <ul>
+                      <li>Bandwidth</li>
+                      <li>Response time</li>
+                      <li>Connections</li>
+                    </ul>
+                  </li>
+                  <li>Load balancing algorithms
+                    <ul>
+                      <li>Round robin
+                        <ul>
+                          <li>Cycle a list of which server to direct traffic to</li>
+                        </ul>
+                      </li>
+                      <li>Weighted Round Robin
+                        <ul>
+                          <li>Weigh servers based on capabilities</li>
+                        </ul>
+                      </li>
+                      <li>IP hash
+                        <ul>
+                          <li>Simply hash the IPs</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Caching
+                <ul>
+                  <li>Store common responses in smaller memory</li>
+                  <li>CDN
+                    <ul>
+                      <li>Special type of Cache, helpful for statiic media.</li>
+                    </ul>
+                  </li>
+                  <li>Cache eviction policies
+                    <ul>
+                      <li>FIFO</li>
+                      <li>LIFO</li>
+                      <li>Least Recently used (oldest)</li>
+                      <li>Most Recently Used (Newest)</li>
+                      <li>Least Frequently Used</li>
+                      <li>Random Replacement</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Flexibility
+        <ul>
+          <li>Able to meet changing business demands</li>
+        </ul>
+      </li>
+      <li>Availability
+        <ul>
+          <li>probability that a system will work as required when required during the period of a mission</li>
+          <li>Ensures continuity</li>
+        </ul>
+      </li>
+      <li>Performance
+        <ul>
+          <li>Performance is an indicator of how well a software system or component meets its requirements for timeliness</li>
+          <li>Speed in effecting a task</li>
+          <li>Latency
+            <ul>
+              <li>Duration request waits to be handled</li>
+            </ul>
+          </li>
+          <li>Response time
+            <ul>
+              <li>Total time to get response to request</li>
+              <li>High response times cost money
+                <ul>
+                  <li>100ms increase in response time reduces sales by 1%</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>CAP THEOREM
+        <ul>
+          <li>Trade-off between Availability, Consistency, Partition Tolerance</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="week-7">Week 7</h2>
+
+<ul>
+  <li>UML
+    <ul>
+      <li>Degrees of UML
+        <ul>
+          <li>As a sketch
+            <ul>
+              <li>Explain ideas</li>
+            </ul>
+          </li>
+          <li>As a blueprint
+            <ul>
+              <li>provide detailed specification of a system</li>
+              <li>Generated with UML tool</li>
+            </ul>
+          </li>
+          <li>As a programming language</li>
+        </ul>
+      </li>
+      <li>4+1 view model
+        <ul>
+          <li>Logical Views
+            <ul>
+              <li>Funcitionality</li>
+              <li>Abstract descriptions of system partitions</li>
+              <li>Diagrams
+                <ul>
+                  <li>Classes</li>
+                  <li>Object</li>
+                  <li>State machine</li>
+                  <li>Interaction diagram</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Implementation view
+            <ul>
+              <li>Software management</li>
+              <li>Describes processes within system</li>
+              <li>Diagrams
+                <ul>
+                  <li>Activity Diagram</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Process View
+            <ul>
+              <li>Performance</li>
+              <li>Scalability</li>
+              <li>Throughput</li>
+              <li>Diagrams:
+                <ul>
+                  <li>Component or package</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Deployment view
+            <ul>
+              <li>System topology</li>
+              <li>Delivery, installation</li>
+              <li>Communication</li>
+              <li>Diagram:
+                <ul>
+                  <li>Deployment Diagrams</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+<strong>Use case view</strong>
+            <ul>
+              <li>Understandability</li>
+              <li>Usability</li>
+              <li>Describes functionality from perspective of outside world.</li>
+              <li>Diagrams:
+                <ul>
+                  <li>Use case, Descriptions</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="week-9">Week 9</h2>
+
+<ul>
+  <li>Design patterns
+    <ul>
+      <li>Creational
+        <ul>
+          <li>Singleton
+            <ul>
+              <li>Problem:
+                <ul>
+                  <li>Access a unique instance from anywhere</li>
+                </ul>
+              </li>
+              <li>Solution
+                <ul>
+                  <li>Singleton.</li>
+                </ul>
+              </li>
+              <li>Pros:
+                <ul>
+                  <li>Only one instance (low memory)</li>
+                  <li>lazy initialization</li>
+                </ul>
+              </li>
+              <li>Cons:
+                <ul>
+                  <li>Can’t subclass</li>
+                  <li>Synchronization problems</li>
+                  <li>No parameters to the constructor</li>
+                  <li>Difficult to test.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Factory
+            <ul>
+              <li>Generalization of object creation.</li>
+            </ul>
+          </li>
+          <li>Abstract Factory</li>
+          <li>Builder</li>
+          <li>Object Pool</li>
+          <li>Facade</li>
+          <li>Adapter</li>
+        </ul>
+      </li>
+      <li>Structural</li>
+      <li>Behavioral</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="configuration-administration">Configuration Administration</h2>
+
+<ul>
+  <li>Configuration Administration
+    <ul>
+      <li>Create Baseline</li>
+      <li>Track changes</li>
+      <li>Establish integrity</li>
+      <li>Basically:
+        <ul>
+          <li>Administration of all the work products, and tracking that all changes in one document are correctly reflected on other dependencies.</li>
+        </ul>
+      </li>
+      <li>View all</li>
+      <li>The Requirements Traceability Matrix (RTM)</li>
+      <li>Configuration elements
+        <ul>
+          <li>Logical groupings of work products</li>
+          <li>Ex:
+            <ul>
+              <li>Files</li>
+              <li>Documents</li>
+              <li>analyses</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Continuous Integration in Agile
+        <ul>
+          <li>Literally just continuously integrate lmao</li>
+          <li>need a central repo</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</body></html>
+ </content>
+
+		<side style="font-size: 0.9em">
+			<h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+			
+			<div
+				style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr)"
+			>
+				
+				<div class="backlink-box">
+					<a
+						class="internal-link"
+						href="/thoughts/2020-08-20"
+						>2020 08 20</a
+					><br />
+					<div style="font-size: 0.9em">
+						2020 08 20
+
+					</div>
+				</div>
+				
+				<div class="backlink-box">
+					<a
+						class="internal-link"
+						href="/thoughts/designing-data-intensive-applications"
+						>Designing Data Intensive Applications</a
+					><br />
+					<div style="font-size: 0.9em">
+						Designing Data-Intensive Applications
+
+					</div>
+				</div>
+				
+				<div class="backlink-box">
+					<a
+						class="internal-link"
+						href="/thoughts/7th-semester"
+						>7th Semester</a
+					><br />
+					<div style="font-size: 0.9em">
+						7th Semester
+
+					</div>
+				</div>
+				
+			</div>
+			
+		</side>
+	</div>
 </article>
 
-<hr>
+<hr />
 
-<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+<p>
+	Here are all the notes in this garden, along with their links, visualized as a
+	graph.
+</p>
 
 <link rel="stylesheet" href="/thoughts/styles.css">
 

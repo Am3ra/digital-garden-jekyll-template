@@ -26,7 +26,7 @@
   
 
   
-  <meta property="article:published_time" content="2021-06-02T16:08:34-05:00">
+  <meta property="article:published_time" content="2021-06-02T16:18:26-05:00">
   <meta property="article:author" content="/">
   
 
@@ -48,17 +48,14 @@
 </nav>
     <div class="wrapper">
       <main><article>
-  <div>
-    <h1>Designing Data Intensive Applications</h1>
-    <time datetime="2021-04-04T17:50:10-05:00">
-      Last updated on April 4, 2021
-      
-    </time>
-  </div>
-
-  <div id="notes-entry-container">
-    <content>
-      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+	<div>
+		<h1>Designing Data Intensive Applications</h1>
+		<time datetime="2021-04-04T17:50:10-05:00"
+			> Last updated on April 4, 2021 
+		</time>
+		
+		<p>
+			This article will take <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
 <h1 id="designing-data-intensive-applications">Designing Data-Intensive Applications</h1>
 
@@ -178,35 +175,176 @@ This is a book, however, so I will only consider the part that is available onli
 </ul>
 
 </body></html>
+ minutes to read.
+		</p>
+	</div>
 
-    </content>
+	<div id="notes-entry-container">
+		<content> <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h1 id="designing-data-intensive-applications">Designing Data-Intensive Applications</h1>
 
-    <side style="font-size: 0.9em">
-      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
-      
-      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/designing-data-intensive-applications">Designing Data Intensive Applications</a><br>
-        <div style="font-size: 0.9em">Designing Data-Intensive Applications
-</div>
-        </div>
-      
-        <div class="backlink-box">
-        <a class="internal-link" href="/thoughts/notes-on-papers">Notes On Papers</a><br>
-        <div style="font-size: 0.9em">Notes on Papers
-</div>
-        </div>
-      
-      </div>
-      
-    </side>
-  </div>
+<p>Part of my series of <a class="internal-link" href="/thoughts/notes-on-papers">notes on papers</a>.
+This is a book, however, so I will only consider the part that is available online, part 1. Will consider obtaining the rest at the end.</p>
+
+<p>Tags: <a class="internal-link" href="/thoughts/dise%C3%B1o-y-arquitectura-de-software">diseño y arquitectura de software</a>
+[Link to article](<a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch01.html" target="blank">https://link</a></p>
+
+<ul>
+  <li>
+<a href="#designing-data-intensive-applications" target="blank">Designing Data-Intensive Applications</a>
+    <ul>
+      <li>
+<a href="#introduction" target="blank">Introduction</a>
+        <ul>
+          <li><a href="#thinking-about-data-systems" target="blank">Thinking about Data Systems</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<blockquote>
+  <p>The Internet was done so well that most people think of it as a natural resource like the Pacific Ocean, rather than something that was man-made. When was the last time a technology with a scale like that was so error-free?</p>
+</blockquote>
+
+<p>Alan Kay, in interview with Dr Dobb’s Journal (2012)</p>
+
+<p>Basic building blocks:</p>
+
+<ul>
+  <li>Databases
+    <ul>
+      <li>Store data to find it later</li>
+    </ul>
+  </li>
+  <li>Caches
+    <ul>
+      <li>Remember the result of an expensive operation.</li>
+    </ul>
+  </li>
+  <li>Indexes
+    <ul>
+      <li>Allow users to search by keyword or filter</li>
+    </ul>
+  </li>
+  <li>Stream Processing
+    <ul>
+      <li>Send message to other process to be handled asynchronously.</li>
+    </ul>
+  </li>
+  <li>Batch Processing
+    <ul>
+      <li>Periodically crunch large amount of accumulated Data</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Useful abstractions for design, different trade-offs depending on implementation.</p>
+
+<h3 id="thinking-about-data-systems">Thinking about Data Systems</h3>
+
+<p>Why lump all abstractions like message queues and DBs in same category? Distinctions have become blurred.</p>
+
+<p>You can make complex/composite data systems from smaller components.</p>
+
+<ul>
+  <li>How do you ensure data remains correct and complete, even with internal errors?</li>
+  <li>How do you provide consistently good performance, even when parts degrade?</li>
+  <li>How do you scale?</li>
+  <li>What’s a good API?</li>
+</ul>
+
+<p>Main ideas behind Data-intensive Applications:</p>
+
+<ul>
+  <li>Reliability
+    <ul>
+      <li>System should work correctly in face of adversity.</li>
+      <li>Tolerate user mistakes or unexpected use.</li>
+      <li>Prevents unauthorized access and abuse.</li>
+      <li>“continuing to work correctly even when things go wrong”</li>
+      <li>Fault is not failure
+        <ul>
+          <li>Fault:
+            <ul>
+              <li>One component deviating from spec.</li>
+            </ul>
+          </li>
+          <li>Failure:
+            <ul>
+              <li>Whole system stops providing required service.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>It’s possible to increase faults to reduce failure
+        <ul>
+          <li><a href="https://netflixtechblog.com/the-netflix-simian-army-16e57fbab116" target="blank">Netflix Chaos Monkey</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Scalability
+    <ul>
+      <li>Should easily grow.</li>
+    </ul>
+  </li>
+  <li>Maintainability
+    <ul>
+      <li>Many people should be able to work productively.</li>
+    </ul>
+  </li>
+</ul>
+
+</body></html>
+ </content>
+
+		<side style="font-size: 0.9em">
+			<h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+			
+			<div
+				style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr)"
+			>
+				
+				<div class="backlink-box">
+					<a
+						class="internal-link"
+						href="/thoughts/designing-data-intensive-applications"
+						>Designing Data Intensive Applications</a
+					><br />
+					<div style="font-size: 0.9em">
+						Designing Data-Intensive Applications
+
+					</div>
+				</div>
+				
+				<div class="backlink-box">
+					<a
+						class="internal-link"
+						href="/thoughts/notes-on-papers"
+						>Notes On Papers</a
+					><br />
+					<div style="font-size: 0.9em">
+						Notes on Papers
+
+					</div>
+				</div>
+				
+			</div>
+			
+		</side>
+	</div>
 </article>
 
-<hr>
+<hr />
 
-<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+<p>
+	Here are all the notes in this garden, along with their links, visualized as a
+	graph.
+</p>
 
 <link rel="stylesheet" href="/thoughts/styles.css">
 
