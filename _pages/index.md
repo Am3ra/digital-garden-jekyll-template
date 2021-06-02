@@ -17,7 +17,7 @@ Most notes aren't completed and are marked [[seedling]], but you might find some
 
 Here are my latest posts:
 <ul class="entries">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.notes limit:5 %}
   <li>
     <a href="{{ post.url }}">
     <h3>{{ post.title }}</h3>
