@@ -1,7 +1,6 @@
 ---
 ---
 
-# Intent And Values
 
 ## Values
 
