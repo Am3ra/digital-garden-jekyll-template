@@ -1,3 +1,6 @@
+---
+---
+
 topic: [[seedling]], [[notes on papers]], [[personal philosophy]]
 
 This is a short summary of my thoughts and notes on [A Discourse Upon the Origin and the Foundation of the Inequality Among Mankind](https://www.gutenberg.org/ebooks/11136). This is part of my ongoing efforts towards improving myself and learning both about philosophy and society. This specific reading was part of the course [[the modern and the postmodern]] from [[coursera]]. 

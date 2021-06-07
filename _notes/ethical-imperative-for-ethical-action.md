@@ -1,3 +1,6 @@
+---
+---
+
 topic: [[personal philosophy]] [[seedling]]
 
 
