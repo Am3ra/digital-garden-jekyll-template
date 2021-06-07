@@ -1,7 +1,6 @@
 ---
 ---
 
-# Mexico
 
 ## Problems
 

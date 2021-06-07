@@ -1,5 +1,4 @@
 ---
 ---
 
-# Attention Architecture
 

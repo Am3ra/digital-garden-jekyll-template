@@ -18,3 +18,4 @@ node_modules/**/*
 _site/*
 
 .vendor/
+.vscode/tasks.json

@@ -1,7 +1,6 @@
 ---
 ---
 
-# Baseball Project
 
 Tags: [[Deep Learning]]
 
@@ -9,10 +8,9 @@ This project is an attempt to use what I've learned from my deep learning classe
 
 Its purpose or goal is to not only cement the learnings, but also predict baseball games to a high degree of accuracy, in order to maybe even win some money.
 
-- [Baseball Project](#baseball-project)
-  - [Todo](#todo)
-  - [Architecture](#architecture)
-    - [Inputs](#inputs)
+- [Todo](#todo)
+- [Architecture](#architecture)
+	- [Inputs](#inputs)
 
 ## Todo
 

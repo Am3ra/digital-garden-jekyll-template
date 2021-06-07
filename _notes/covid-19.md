@@ -3,7 +3,6 @@
 
 
 
-# COVID 1923`
 
 Part of my [[life story]]
 
