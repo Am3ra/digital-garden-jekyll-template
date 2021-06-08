@@ -61,7 +61,7 @@ If you'd like to quote other people, consider using quote blocks:
 
 And of course, images look great:
 
-<img src="/assets/image.jpg"/>
+<img src="{{ site.baseurl }}/assets/image.jpg"/>
 
 ### Code syntax highlighting
 
