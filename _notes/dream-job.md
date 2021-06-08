@@ -1,3 +1,6 @@
+---
+---
+
 topic: [[personal philosophy]]
 
 I've been thinking about the concept of a dream job lately. Seems like an incredibly capitalist concept. Do people really dream of labor?
