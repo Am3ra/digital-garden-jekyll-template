@@ -10,3 +10,4 @@ gem "webrick", "~> 1.7"
 gem "nokogiri"
 gem "jekyll-feed"
 gem "liquid_reading_time"
+gem 'jgd'
