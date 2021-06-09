@@ -12,6 +12,3 @@ In my seventh semester of university, I took the following classes:
 * [[Gráficas Computacionales]]
 * [[Aplicaciones Web]]
 * [[Finanzas personales]]
-
-
-
