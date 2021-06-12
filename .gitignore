@@ -22,3 +22,4 @@ _site/*
 .DS_Store
 _includes/notes_graph.json
 Gemfile.lock
+Gemfile.lock

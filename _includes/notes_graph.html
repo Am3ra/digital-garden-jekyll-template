@@ -26,11 +26,11 @@
 			fontSize: 12,
 			lineColor: '#277da1',
 			lineWidth: 0.2,
-			particleWidth: 1.0,
+			particleWidth: 2.0,
 			highlightedForeground: '#f9c74f',
 			node: {
-			note: '#277da1',
-			placeholder: '#545454',
+				note: '#277da1',
+				placeholder: '#545454',
 			},
 		};
 
@@ -50,19 +50,22 @@
 			.range([0, 1])
 			.clamp(true);
 
-		
+
 
 		let info = {};
 
-		for (node of graphData.nodes){
+		for (node of graphData.nodes) {
 			info[node.id] = node;
 			info[node.id].neighbors = [];
+			info[node.id].links = [];
 		}
 
-		for (link of graphData.edges){
+		for (link of graphData.edges) {
 			console.log(info[link.source])
-			info[link.source].neighbors.push(link);
-			info[link.target].neighbors.push(link);
+			info[link.source].neighbors.push(link.target);
+			info[link.target].neighbors.push(link.source);
+			info[link.source].links.push(link);
+			info[link.target].links.push(link);
 		}
 
 		let model = {
@@ -72,8 +75,8 @@
 			focusLinks: new Set(),
 			nodeInfo: info,
 			data: {
-			nodes: graphData.nodes,
-			links: graphData.edges,
+				nodes: graphData.nodes,
+				links: graphData.edges,
 			},
 			/** The style property.
 			 * It tries to be set using VSCode values,
@@ -92,18 +95,18 @@
 			const focusNodes = new Set();
 			const focusLinks = new Set();
 			if (model.hoverNode) {
-			focusNodes.add(model.hoverNode);
-			const info = model.nodeInfo[model.hoverNode];
-			info.neighbors.forEach(neighborId => focusNodes.add(neighborId));
-			info.links.forEach(link => focusLinks.add(link));
+				focusNodes.add(model.hoverNode);
+				const info = model.nodeInfo[model.hoverNode];
+				info.neighbors.forEach(neighborId => focusNodes.add(neighborId));
+				info.links.forEach(link => focusLinks.add(link));
 			}
 			if (model.selectedNodes) {
-			model.selectedNodes.forEach(nodeId => {
-			focusNodes.add(nodeId);
-			const info = model.nodeInfo[nodeId];
-			info.neighbors.forEach(neighborId => focusNodes.add(neighborId));
-			info.links.forEach(link => focusLinks.add(link));
-			});
+				model.selectedNodes.forEach(nodeId => {
+					focusNodes.add(nodeId);
+					const info = model.nodeInfo[nodeId];
+					info.neighbors.forEach(neighborId => focusNodes.add(neighborId));
+					info.links.forEach(link => focusLinks.add(link));
+				});
 			}
 			model.focusNodes = focusNodes;
 			model.focusLinks = focusLinks;
@@ -111,112 +114,131 @@
 
 		const Actions = {
 			refresh: graphInfo =>
-			update(m => {
-			m.nodeInfo = graphInfo.nodes;
-			const links = graphInfo.links;
+				update(m => {
+					m.nodeInfo = graphInfo.nodes;
+					const links = graphInfo.links;
 
-			// compute graph delta, for smooth transitions we need to mutate objects in-place
-			const nodeIdsToAdd = new Set(Object.keys(m.nodeInfo));
-			const nodeIndexesToRemove = new Set();
-			m.data.nodes.forEach((node, index) => {
-			if (nodeIdsToAdd.has(node.id)) {
-				nodeIdsToAdd.delete(node.id);
-			} else {
-				nodeIndexesToRemove.add(index);
-			}
-			});
-			// apply the delta
-			nodeIndexesToRemove.forEach(index => {
-			m.data.nodes.splice(index, 1); // delete the element
-			});
-			nodeIdsToAdd.forEach(nodeId => {
-			m.data.nodes.push({
-				id: nodeId,
-			});
-			});
-			m.data.links = links; // links can be swapped out without problem
+					// compute graph delta, for smooth transitions we need to mutate objects in-place
+					const nodeIdsToAdd = new Set(Object.keys(m.nodeInfo));
+					const nodeIndexesToRemove = new Set();
+					m.data.nodes.forEach((node, index) => {
+						if (nodeIdsToAdd.has(node.id)) {
+							nodeIdsToAdd.delete(node.id);
+						} else {
+							nodeIndexesToRemove.add(index);
+						}
+					});
+					// apply the delta
+					nodeIndexesToRemove.forEach(index => {
+						m.data.nodes.splice(index, 1); // delete the element
+					});
+					nodeIdsToAdd.forEach(nodeId => {
+						m.data.nodes.push({
+							id: nodeId,
+						});
+					});
+					m.data.links = links; // links can be swapped out without problem
 
-			// check that selected/hovered nodes are still valid (see #397)
-			m.hoverNode = m.nodeInfo[m.hoverNode] != null ? m.hoverNode : null;
-			m.selectedNodes = new Set(
-			Array.from(m.selectedNodes).filter(nId => m.nodeInfo[nId] != null)
-			);
+					// check that selected/hovered nodes are still valid (see #397)
+					m.hoverNode = m.nodeInfo[m.hoverNode] != null ? m.hoverNode : null;
+					m.selectedNodes = new Set(
+						Array.from(m.selectedNodes).filter(nId => m.nodeInfo[nId] != null)
+					);
 
-			// annoying we need to call this function, but I haven't found a good workaround
-			graph.graphData(m.data);
-			}),
+					// annoying we need to call this function, but I haven't found a good workaround
+					graph.graphData(m.data);
+				}),
 			selectNode: (nodeId, isAppend) =>
-			update(m => {
-			if (!isAppend) {
-			m.selectedNodes.clear();
-			}
-			if (nodeId != null) {
-			m.selectedNodes.add(nodeId);
-			}
-			}),
+				update(m => {
+					if (!isAppend) {
+						m.selectedNodes.clear();
+					}
+					if (nodeId != null) {
+						m.selectedNodes.add(nodeId);
+					}
+				}),
 			highlightNode: nodeId =>
-			update(m => {
-			m.hoverNode = nodeId;
-			}),
+				update(m => {
+					m.hoverNode = nodeId;
+				}),
 		};
 
 		function initDataviz() {
 			const elem = document.getElementById("graph-wrapper");
 			graph(elem)
-			.graphData(model.data)
-			.width(elem.offsetWidth)
-			.linkHoverPrecision(8)
-			.d3Force('x', d3.forceX())
-			.d3Force('y', d3.forceY())
-			.d3Force('collide', d3.forceCollide(graph.nodeRelSize()))
+				.graphData(model.data)
+				.width(elem.offsetWidth)
+				.linkHoverPrecision(8)
+				.d3Force('x', d3.forceX())
+				.d3Force('y', d3.forceY())
+				.d3Force('collide', d3.forceCollide(graph.nodeRelSize()))
 
-			.linkDirectionalParticles(1)
-			.linkDirectionalParticleWidth(link =>
-			getLinkState(link, model) === 'highlighted'
-			? model.style.particleWidth || styleFallback.particleWidth
-			: 0
-			)
-			.nodeCanvasObject((node, ctx, globalScale) => {
-			  const info = model.nodeInfo[node.id];
-			  if (info == null) {
-			//     console.error(`Could not find info for node ${node.id} - skipping`);
-			    return;
-			  }
-			  const size = sizeScale(info.neighbors.length);
-			  const { fill, border } = getNodeColor(node.id, model);
-			  const fontSize = model.style.fontSize / globalScale;
-			  const nodeState = getNodeState(node.id, model);
-			  const textColor = fill.copy({
-			    opacity:
-			      nodeState === 'regular'
-			        ? labelAlpha(globalScale)
-			        : nodeState === 'highlighted'
-			        ? 1
-			        : Math.min(labelAlpha(globalScale), fill.opacity),
-			  });
-			  const label = info.label;
+				.linkDirectionalParticles(1)
+				.linkDirectionalParticleWidth(link =>
+					getLinkState(link, model) === 'highlighted'
+						? model.style.particleWidth || styleFallback.particleWidth
+						: 0
+				)
+				.nodeCanvasObject(drawNode)
+				.onNodeHover(node => {
+					model.focusNodes = new Set();
+					model.focusLinks = new Set();
+					model.hoverNode = node;
+					console.log(model);
+					if (node) {
+						model.focusNodes.add(node);
+						model.nodeInfo[node.id].neighbors.forEach(neighbor => model.focusNodes.add(neighbor));
+						node.links.forEach(link => model.focusLinks.add(link));
+					}
 
-			  Draw(ctx)
-			    .circle(node.x, node.y, size + 0.2, border)
-			    .circle(node.x, node.y, size, fill)
-			    .text(label, node.x, node.y + size + 1, fontSize, textColor.toString());
-			})
+					hoverNode = node || null;
+				})
+				.autoPauseRedraw(false) // keep redrawing after engine has stopped
+				.linkWidth(link => model.focusLinks.has(link) ? 5 : 1)
+				.linkCurvature(0.1	)
+
 			// .linkColor(link => getLinkColor(link, model))
-		//      });
+			//      });
 		}
+
+		const drawNode = (node, ctx, globalScale) => {
+			const info = model.nodeInfo[node.id];
+			if (info == null) {
+				//     console.error(`Could not find info for node ${node.id} - skipping`);
+				return;
+			}
+			const size = sizeScale(info.neighbors.length);
+			const { fill, border } = getNodeColor(node.id, model);
+			const fontSize = model.style.fontSize / globalScale;
+			const nodeState = getNodeState(node.id, model);
+			const textColor = fill.copy({
+				opacity:
+					nodeState === 'regular'
+						? labelAlpha(globalScale)
+						: nodeState === 'highlighted'
+							? 1
+							: Math.min(labelAlpha(globalScale), fill.opacity),
+			});
+			const label = info.label;
+
+			Draw(ctx)
+				.circle(node.x, node.y, size + 0.2, border)
+				.circle(node.x, node.y, size, fill)
+				.text(label, node.x, node.y + size + 1, fontSize, textColor.toString());
+		};
 
 		function augmentGraphInfo(data) {
 			Object.values(data.nodes).forEach(node => {
-			node.neighbors = [];
-			node.links = [];
+				node.neighbors = [];
+				node.links = [];
 			});
 			data.links.forEach(link => {
-			const a = data.nodes[link.source];
-			const b = data.nodes[link.target];
-			a.neighbors.push(b.id);
-			b.neighbors.push(a.id);
-			a.links.push(link);
-			b.links.push(link);
+				const a = data.nodes[link.source];
+				const b = data.nodes[link.target];
+				a.neighbors.push(b.id);
+				b.neighbors.push(a.id);
+				a.links.push(link);
+				b.links.push(link);
 			});
 			return data;
 		}
@@ -225,87 +247,79 @@
 			const info = model.nodeInfo[nodeId];
 			const style = model.style;
 			const typeFill = d3.rgb(
-			style.node[info.type ?? 'note'] ?? style.node['note']
+				style.node[info.type ?? 'note'] ?? style.node['note']
 			);
 			switch (getNodeState(nodeId, model)) {
-			case 'regular':
-			return { fill: typeFill, border: typeFill };
-			case 'lessened':
-			const transparent = d3.rgb(typeFill).copy({ opacity: 0.05 });
-			return { fill: transparent, border: transparent };
-			case 'highlighted':
-			return {
-			fill: typeFill,
-			border: d3.rgb(style.highlightedForeground),
-			};
-			default:
-			throw new Error('Unknown type for node', nodeId);
+				case 'regular':
+					return { fill: typeFill, border: typeFill };
+				case 'lessened':
+					const transparent = d3.rgb(typeFill).copy({ opacity: 0.3 });
+					return { fill: transparent, border: transparent };
+				case 'highlighted':
+					return {
+						fill: typeFill,
+						border: d3.rgb(style.highlightedForeground),
+					};
+				default:
+					throw new Error('Unknown type for node', nodeId);
 			}
 		}
 
 		function getLinkColor(link, model) {
 			const style = model.style;
 			switch (getLinkState(link, model)) {
-			case 'regular':
-			return style.lineColor;
-			case 'highlighted':
-			return style.highlightedForeground;
-			case 'lessened':
-			return d3.hsl(style.lineColor).copy({ opacity: 0.5 });
-			default:
-			throw new Error('Unknown type for link', link);
+				case 'regular':
+					return style.lineColor;
+				case 'highlighted':
+					return style.highlightedForeground;
+				case 'lessened':
+					return d3.hsl(style.lineColor).copy({ opacity: 0.5 });
+				default:
+					throw new Error('Unknown type for link', link);
 			}
 		}
 
 		function getNodeState(nodeId, model) {
-			return model.selectedNodes.has(nodeId) || model.hoverNode === nodeId
-			? 'highlighted'
-			: model.focusNodes.size === 0
-			? 'regular'
-			: model.focusNodes.has(nodeId)
-			? 'regular'
-			: 'lessened';
+			if (model.hoverNode === nodeId) console.log(nodeId);
+			return model.selectedNodes.has(nodeId) || (model.hoverNode ? model.hoverNode.id : null) === nodeId
+				? 'highlighted'
+				: model.focusNodes.size === 0
+					? 'regular'
+					: model.focusNodes.has(nodeId)
+						? 'regular'
+						: 'lessened';
 		}
 
 		function getLinkState(link, model) {
 			return model.focusNodes.size === 0
-			? 'regular'
-			: model.focusLinks.has(link)
-			? 'highlighted'
-			: 'lessened';
+				? 'regular'
+				: model.focusLinks.has(link)
+					? 'highlighted'
+					: 'lessened';
 		}
 
 		const Draw = ctx => ({
-			circle: function(x, y, radius, color) {
-			ctx.beginPath();
-			ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
-			ctx.fillStyle = color;
-			ctx.fill();
-			ctx.closePath();
-			return this;
+			circle: function (x, y, radius, color) {
+				ctx.beginPath();
+				ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+				ctx.fillStyle = color;
+				ctx.fill();
+				ctx.closePath();
+				return this;
 			},
-			text: function(text, x, y, size, color) {
-			ctx.font = `${size}px Sans-Serif`;
-			ctx.textAlign = 'center';
-			ctx.textBaseline = 'top';
-			ctx.fillStyle = color;
-			ctx.fillText(text, x, y);
-			return this;
+			text: function (text, x, y, size, color) {
+				ctx.font = `${size}px Sans-Serif`;
+				ctx.textAlign = 'center';
+				ctx.textBaseline = 'top';
+				ctx.fillStyle = color;
+				ctx.fillText(text, x, y);
+				return this;
 			},
 		});
-
-		// init the app
-
-
 
 		initDataviz();
 		graph.onEngineStop(() => graph.zoomToFit(400));
 		console.log('ready');
-
-
-
-
-
 				// For testing
 	</script>
 </div>

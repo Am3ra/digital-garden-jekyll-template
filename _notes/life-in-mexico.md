@@ -1,3 +1,6 @@
+---
+---
+
 My life in mexico can be seperated into two halfs, my infancy, and end of highscool/[[university]] period.
 
 ## Infancy

@@ -1,3 +1,6 @@
+---
+---
+
 [[seedling]]
 
 Part of my [[life story]]
