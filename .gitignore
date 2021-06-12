@@ -21,3 +21,4 @@ _site/*
 .vscode/tasks.json
 .DS_Store
 _includes/notes_graph.json
+Gemfile.lock
