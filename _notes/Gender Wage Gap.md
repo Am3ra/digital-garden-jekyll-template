@@ -64,3 +64,7 @@ A simple though probably flawed conclusion to draw from this is simple: When wom
 
 
 This topic is more complex than most people realize. So I only ask that you don't take what everyone tells you for granted, the data is super interesting.
+
+I recommend you try this interactive data analysis tool from the U.S. Department of Labor:
+
+https://www.dol.gov/agencies/wb/data/occupations
