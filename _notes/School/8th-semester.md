@@ -4,7 +4,7 @@
 
 8th Semester
 
-In my seventh semester of university, I took the following classes:
+In my seventh semester of [[university]], I took the following classes:
 
 * [[Diseño de Compiladores]]
 * [[Ética, profesión, y ciudadanía]]

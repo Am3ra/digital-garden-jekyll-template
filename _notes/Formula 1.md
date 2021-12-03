@@ -1,3 +1,6 @@
+---
+---
+
 [[Entertainment]]
 
 Although I was generally aware of Formula one during my youth, I never really found it accessible. I became a fan after watching Netflix's "Drive to Survive" series.
