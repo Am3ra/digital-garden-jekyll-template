@@ -3,7 +3,8 @@
 
 topic: [[short trek]] [[deep learning]]
 
-This is a short summary for the latest breakthroughs and applications for deep learning (precursor for AI) techniques. I will divide them in three broad types: Computer Vision,  Natural Language Processing (NLP), and Others.
+This is a short summary for the latest breakthroughs and applications for deep learning (precursor for AI) techniques. I will divide them in three broad types: Computer Vision,  Natural Language Processing (NLP), and Others. Check it out on my linkedin!
+
 
 A great resource for learning and keeping up-to-date about this topic is [Two Minute Papers on Youtube](https://www.youtube.com/c/K%C3%A1rolyZsolnai/videos).
 
