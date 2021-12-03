@@ -1,24 +1,31 @@
 ---
 ---
 
+I want to understand the wage gap more fully. Join me in an exploration of the data!
+## Here are some questions I still want to ask:
 
-I want to understand the wage gap more fully. Join me in an emporation of the data!
+* Where? Are there different wage gaps per country? Which is the least different country?
 
-Does it exist? Is the 70c figure accurate? In what way?
+* What are the real distributions? Are there places where women earn more on average?
+
+* What's the breakdown by industry?
+
+* Does age play a role?
+
+* Are there mitigating factors?
+
+* What are the sources?
+  
+* Does it exist? Is the 70c figure accurate? In what way?
+
+## Thoughts
 
 According to the [aaw](https://www.aauw.org/app/uploads/2020/02/AAUW-2018-SimpleTruth-nsa.pdf) the gap is more accurately around 80c or 20%
 
-Where? Are there different wage gaps per country? Which is the least different country?
+In almost All jobs, women earn significatly less than mean on average. 
 
-What are the real distributions? Are there places where women earn more on average?
+[PLEASE look at this graph, it's crazy](https://public.tableau.com/shared/RRBQ2YSTR?:display_count=y&:origin=viz_share_link&:embed=y)
 
-What's the breakdown by industry?
-
-Does age play a role?
-
-Are there mitigating factors?
-
-What are the sources?
 
 ## Quote:
 > women spent an average of 6.3 hours more per week doing household chores than men (15.5 versus 9.2 hours) and 2.4 hours more per week providing care to household members (4.4 versus 2.0 hours). Women also, on average, spent more time both purchasing goods and services and traveling related to unpaid household work per week than their male counterparts. Data from the Organisation for Economic Cooperation and Development (OECD) indicates that American men spend 141 minutes per day on unpaid household labor, while women spend 245 minutes. 
