@@ -1,4 +1,4 @@
-[[a guide to being human]] [[personal-philosophy]]
+[[a guide to being human]] [[personal-philosophy]] [[personal values]]
 
 One of the most important things that any person can do is to define then order their values. How you define your values defines what actions you take, and how you even frame the way you *think* of problems. Because this, it is important to not only define them, but also to *rank* them.
 
