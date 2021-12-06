@@ -45,7 +45,7 @@ If you work for a company that does horrible things, what does that say about yo
 
 "Quien con lobos anda, aullar aprende".
 
-"Tell me who your friends are, and I'll tell you who you are."
+"Dime con quien andas, y te dire quien eres."
 
 "Birds of feather flock together".
 
