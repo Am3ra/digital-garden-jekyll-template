@@ -3,6 +3,8 @@ Motivation is an integral part of everyday life.
 
 It dictates in large regard what you do and why.
 
+![Motivation!](https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80)
+
 How does motivation affect you? Are you motivated? Why or why not? Here are some theories that may help you understand yourself and those around you.
 
 ## Maslows Theory of Needs
