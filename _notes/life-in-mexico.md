@@ -18,7 +18,7 @@ Returning from living in [[Houston]] the second time, I finished my last two yea
 
 During my third semester of university, I met [[Kari]].
 
-During my 8th semester, I got a job in [[sparkademy]].
+During my 8th semester , I got a job in [[sparkademy]].
 
 Who knows what the future will bring.
 
