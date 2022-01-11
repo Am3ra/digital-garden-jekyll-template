@@ -1,6 +1,6 @@
 title: My digital garden
 include: ["_pages", "components", "node_modules"]
-exclude: ["_includes/notes_graph.json"]
+exclude: ["_includes/notes_graph.json", "_notes/Daily Notes"]
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
 # Pages deploys your repository (which is usually the repository name).
