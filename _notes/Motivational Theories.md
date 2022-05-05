@@ -34,7 +34,7 @@ Motivating factors are exactly that, things that drive us forward, not only main
 
 1. Are you being recognized?
 2. are your environmental standards met?
-3. 
+3.
 
 
 ## Pink's Theory
@@ -53,7 +53,7 @@ Autonomy — how self-sufficient you are, how much you direct your own life
 
 Mastery — How good you are at what you do. Think about how frustrating it can be to learn something like a new language, and how rewarding it can be to speak it fluently
 
-Purpose — Self-esteem and drive to do better by ourselves. 
+Purpose — Self-esteem and drive to do better by ourselves.
 
 > Many students are demotivated in class because they don't understand the purpose - 'Why do I need to learn this?' and 'Will Iever usethis in my future career?'.
 
