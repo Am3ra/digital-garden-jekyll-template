@@ -46,6 +46,7 @@ High energy starts to be socially destructive before physically destructive.
 ## 2. The industrialization of traffic 
 
 **Definitions** 
+
 1. Traffic
   1. Movement of people outside their homes
 2. Transit 
