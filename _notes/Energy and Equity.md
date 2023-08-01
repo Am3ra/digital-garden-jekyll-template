@@ -11,7 +11,7 @@ An article from 1973, by Ivan Illich.
 destroy the physical milieu.
 
 What does this mean?
- 
+
 > According to this notion, man is born into perpetual dependence on slaves
 which he must painfully learn to master. If he does not employ prisoners, then he needs
 machines to do most of his work
@@ -34,22 +34,22 @@ Why do #1 and #2 imply increased social expenditure and social control?
 
 Energy and equity can only be correlated to a point, not infinitely.
 
-High energy starts to be socially destructive before physically destructive.  
+High energy starts to be socially destructive before physically destructive.
 
 > technocracy must prevail as soon as the ratio of mechanical power to metabolic energy oversteps a definite, identifiable threshold
 
-**Mexico is past this threshold** 
+**Mexico is past this threshold**
 
 * more energy results in more inequality, inefficiency, and impotence.
 
 
-## 2. The industrialization of traffic 
+## 2. The industrialization of traffic
 
-**Definitions** 
+**Definitions**
 
 1. Traffic
   1. Movement of people outside their homes
-2. Transit 
+2. Transit
   1. Movement that requires metabolic energy (biologic/humans exerting effort, not passive)
 3. Transport
   1. Movement that doesn't require metabolic energy
@@ -82,7 +82,7 @@ High energy starts to be socially destructive before physically destructive.
     - Not counting court
     - Hospitals
     - mechanics
-  - The model American puts in 1,600 hours to get 7,500 miles: less than five miles per hour 
+  - The model American puts in 1,600 hours to get 7,500 miles: less than five miles per hour
 
 
 ## 3. Speed-stunned imagination
@@ -92,7 +92,7 @@ High energy starts to be socially destructive before physically destructive.
   - Clinics are further than children can be carried
   - once a village is connected to the world, local requirements like stores are reduced
   - Some places (imagine villages in Guatemala) that don't have access to transport, have not been modified to depend on it.
-- Quotidian usage of transport creates *the habitual passenger* 
+- Quotidian usage of transport creates *the habitual passenger*
   - the habitual passenger loses autonomy (see above  )
   - Knows how much time they spend on traffic
   - Regardless of method of transport, feels slower and poorer than the privileged others that don't face traffic
@@ -123,7 +123,7 @@ High energy starts to be socially destructive before physically destructive.
     - The more high-speed transport is available, the more traffic grows
     - (Transport time expenditure grows faster than time saving)
       - There comes a point where a society spends more time than it saves
-    - There is a critical speed where for one person to save time, another must expend it 
+    - There is a critical speed where for one person to save time, another must expend it
       - This means that faster vehicles result in effective transfer of life-time
       - This disproportionately affects the majority who can't afford it
     - Motor vehicles create distance ('remoteness') they alone can shrink
@@ -131,13 +131,12 @@ High energy starts to be socially destructive before physically destructive.
     - Speeds create social hierarchy
       - destination distance creates hierarchy
         - (Anyone up for a trip to Fiji or Bora-Bora?)
-      - Vehicle becomes symbol of career accomplishment 
+      - Vehicle becomes symbol of career accomplishment
       - Social status (and other ideological labels) also grants speed
         - Presidents of poor countries get flown around in jets
           - Concentration of power makes transport faster and more efficient, but delineates difference in time-value of the poor working-class people from the political elite
-      -  . .. 
+      -  . ..
 
 ## 5. Ineffectiveness of acceleration
-tsxi  
- 
+
 
