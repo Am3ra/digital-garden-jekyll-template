@@ -2,7 +2,7 @@
 title: F.I.R.E
 ---
 
-
+Financial health
 
 FIRE: Financial Independence, Retire Early.
 
@@ -37,3 +37,7 @@ FI/RE is NOT about:
 - Taking the slow road, or the traditional road to retirement
 
 Becoming financially independent requires hard work and a healthy attitude towards money, but also a degree of privilege. When participating on this subreddit, please be mindful of the ways in which you are lucky
+
+
+One way I'm working on reducing working time is getting a second job. 
+

@@ -2,11 +2,6 @@
 An article from 1973, by Ivan Illich.
 
 
-* [1. The Energy Crisis](#1.-the-energy-crisis)
-* [2. The industrialization of traffic](#2.-the-industrialization-of-traffic)
-* [3. Speed-stunned imagination](#3.-speed-stunned-imagination)
-* [4. Net transfer of Life-Time](#4.-net-transfer-of-life-time)
-* [5. Ineffectiveness of acceleration](#5.-ineffectiveness-of-acceleration)
 
 ## 1. The Energy Crisis
 
@@ -16,14 +11,19 @@ An article from 1973, by Ivan Illich.
 destroy the physical milieu.
 
 What does this mean?
-
+ 
 > According to this notion, man is born into perpetual dependence on slaves
 which he must painfully learn to master. If he does not employ prisoners, then he needs
 machines to do most of his work
 
-> low-energy policy allows for a wide choice of life-styles and cultures. If, on the other hand, a society opts for high energy consumption, its social relations must be dictated by technocracy and will be equally degrading whether labeled capitalist or socialists
+> low-energy policy allows for a wide choice of life-styles and cultures. If, on
+> the other hand, a society opts for high energy consumption, its social
+> relations must be dictated by technocracy and will be equally degrading
+> whether labeled capitalist or socialists
 
-So, if a society decides to require a lot of energy from everyone, people that don't have access to it will be excluded. On the other hand, low energy requirements include everyone.
+So, if a society decides to require a lot of energy from everyone, people that
+don't have access to it will be excluded. On the other hand, low energy
+requirements include everyone.
 
 Three ways to measure well-being
 1. Energy usage per-capita
@@ -59,7 +59,7 @@ High energy starts to be socially destructive before physically destructive.
   * Healthy
   * Autonomous
   * equal
-* Transport restricts the benefits that walking has 
+* Transport restricts the benefits that walking has
   * Routes are pre-defined
   * not healthy
   * unequal
@@ -72,7 +72,6 @@ High energy starts to be socially destructive before physically destructive.
 
 
 > The occasional chance to spend a few hours strapped into a high-powered seat makes him an accomplice in the distortion of human space, and prompts him to consent to the design of his country’s geography around vehicles rather than around people.
-
 
 
 - People spend a lot of time on transport (e.g. cars)
@@ -139,6 +138,6 @@ High energy starts to be socially destructive before physically destructive.
       -  . .. 
 
 ## 5. Ineffectiveness of acceleration
-
-
+tsxi  
+ 
 
