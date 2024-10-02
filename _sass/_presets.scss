@@ -10,7 +10,7 @@ $color-border-dark: #262626;
 $color-box-background-dark: #222;
 
 @mixin darkmodeToggle($property, $val1, $val2) {
-  #{$property}: $val1;
+  & { #{$property}: $val1; }
   @media (prefers-color-scheme: light) {
     #{$property}: $val1;
   }

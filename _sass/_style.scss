@@ -6,7 +6,6 @@ $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
 html {
-  
   @include darkmodeToggle(background-color, #fafafa, #181818);
 }
 body {
@@ -16,19 +15,19 @@ body {
   line-height: 1.7;
   padding: 4vh 6vw;
   overflow-x: hidden;
-  @include darkmodeToggle(color, $color-text-light, $color-text-dark);
   font-size: 1rem;
   max-width: 63em;
 
   @media (min-width: 820px) {
     font-size: 1.2rem;
   }
+  @include darkmodeToggle(color, $color-text-light, $color-text-dark);
 }
 
 time {
   display: block;
-  @include darkmodeToggle(color, $color-subtext-light, $color-subtext-dark);
   margin: 0.5em 0 1em;
+  @include darkmodeToggle(color, $color-subtext-light, $color-subtext-dark);
 }
 
 footer {
@@ -50,13 +49,13 @@ blockquote {
   padding: 1.5em;
   margin: 0;
   font-size: 0.88em;
-  @include darkmodeToggle(background, $color-box-background-light, $color-box-background-dark); 
 
   border-radius: $border-radius;
 
   p {
     margin: 0;
   }
+  @include darkmodeToggle(background, $color-box-background-light, $color-box-background-dark); 
 }
 
 hr {
@@ -82,9 +81,7 @@ a {
   transition: background 300ms;
   padding: 0 0.1em;
   text-decoration: none;
-  @include darkmodeToggle(border-bottom, 1px solid $color-border-light, 1px solid $color-border-dark);
   color: $color-primary-light;
-  @include darkmodeToggle(color, $color-primary-light, $color-primary-dark);
   // @include darkmodeToggle(background, inherit, ;
   &:hover {
     color: black !important;
@@ -103,6 +100,8 @@ a {
   &.reversefootnote:after {
     content: "";
   }
+  @include darkmodeToggle(border-bottom, 1px solid $color-border-light, 1px solid $color-border-dark);
+  @include darkmodeToggle(color, $color-primary-light, $color-primary-dark);
 }
 
 *:focus {
@@ -121,17 +120,17 @@ nav {
     "content"
     "side";
 
+  max-width: 100vw;
   @media (min-width: 700px) {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "content side";
   }
-  max-width: 100vw;
 }
 
 .backlink-box {
-  @include darkmodeToggle(background, $color-box-background-light, $color-box-background-dark); 
   padding: 1em;
   border-radius: $border-radius;
+  @include darkmodeToggle(background, $color-box-background-light, $color-box-background-dark); 
 }
 
 code {

@@ -2,23 +2,23 @@
 
 .links line {
   stroke: #ccc;
-  @include darkmodeToggle(stroke, #ccc, #444);
   opacity: 0.5;
+  @include darkmodeToggle(stroke, #ccc, #444);
 }
 
 .nodes circle {
   cursor: pointer;
   fill: #8b88e6;
-  @include darkmodeToggle(fill, #8b88e6, #4f4d85);
   transition: all 0.15s ease-out;
+  @include darkmodeToggle(fill, #8b88e6, #4f4d85);
 }
 
 .text text {
   cursor: pointer;
   fill: #333;
-  @include darkmodeToggle(fill, #333333, rgb(168, 168, 168));
   text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb,
     1px 1px 0 #fafafabb;
+  @include darkmodeToggle(fill, #333333, rgb(168, 168, 168));
   @include darkmodeToggle(
     text-shadow,
     (
@@ -50,7 +50,7 @@
 
 #graph-wrapper {
   background: #fcfcfc;
-  @include darkmodeToggle(background, #fcfcfc, #222222);
   border-radius: 4px;
   height: auto;
+  @include darkmodeToggle(background, #fcfcfc, #222222);
 }
