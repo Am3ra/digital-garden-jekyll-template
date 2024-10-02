@@ -1,7 +1,6 @@
 ---
 ---
 
-# How to Help
 [[seedling]]
 
 When I think about how to help people, I often think about [[Power]]. How to help the most people, it helps to be powerful. Of course, it makes sense theoretically: if **power** is the ability of someone to impose their will on the world, if they want to help, power only increases their ability to do so.
