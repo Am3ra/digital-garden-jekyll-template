@@ -1,3 +1,6 @@
+---
+---
+
 Personal finances are probably one of the most important decisions that a person can make in their life.
 Thanks to [[capitalism]] in our society, Finances determine the quality of life, opportunities, and the direction of a person's story in an extremely disproportionate manner.
 

@@ -1,3 +1,6 @@
+---
+---
+
 
 [[personal-philosophy]]
 

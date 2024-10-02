@@ -1,3 +1,6 @@
+---
+---
+
 On august 16th (I think), I had maxilofacial surgery in the city of Guadalajara. 
 
 The surgery had a drastic effect on my life, especially since in preperation for it, I shaved my incredibly long hair.

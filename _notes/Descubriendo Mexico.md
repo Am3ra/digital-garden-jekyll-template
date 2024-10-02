@@ -1,3 +1,6 @@
+---
+---
+
 # Descubriendo Mexico
 
 Estoy convencido que cuando aterrizó Cortez por primera vez en la peninsula de Yucatan,  encontró una gente conocida. Quizá encontró gente más parecida a él de lo que se pudo haber imaginado.

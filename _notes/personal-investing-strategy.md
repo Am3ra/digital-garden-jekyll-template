@@ -1,3 +1,6 @@
+---
+---
+
 [[personal finances]]
 
 My basic strategy for investing is to invest in a total world etf, namely $VT. This is, in short, an admittance of my ignorance in investing, and trust in the global markets in the long term.

@@ -1,3 +1,6 @@
+---
+---
+
 Monterrey is the home city of my [[university]].
 
 I moved here in the middle of october 2021, after my [[surgery]]. Here I completed my bachelor's degree, and have lived ever since.

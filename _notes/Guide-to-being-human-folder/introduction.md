@@ -1,3 +1,6 @@
+---
+---
+
 # Foreword
 
 The purpose of the guide, like almost all writing, is to order thoughts with the aim of transmitting them to another person. It's a way for me to meditate about life, and my way around it, and hell, maybe even connect with someone else on the way, and even help. In that sense, this is a very personal text, in that it transmits my philosophy, my innermost thoughts. It's what I would like to tell my children.

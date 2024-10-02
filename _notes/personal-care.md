@@ -1,3 +1,6 @@
+---
+---
+
 [[seedling]]
 
 The one thing that you will have for your entire life, is your body, which includes your mind. As such, it's prudent to keep both in the best possible state, something easier said than done.

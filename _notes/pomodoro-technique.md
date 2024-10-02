@@ -1,3 +1,6 @@
+---
+---
+
 An incredibly useful technique for study and work, and focus in general.
 
 The premise is simple: Humans aren't made to be constantly focused, and the longer that they require focus, the more likely they are to lose it. For example, I listened to a podcast reecently, which included the interesting tidbit that nurse medical errors increase exponentially after 12 hours of work.
