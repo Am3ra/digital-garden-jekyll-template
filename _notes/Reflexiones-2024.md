@@ -16,12 +16,16 @@ En este sentido, Trump siempre se me ha hecho increiblemente similar a AMLO. Por
 
 ## 2) El dólar sigue siendo el rey
 
-<img src="https://datawrapper.dwcdn.net/skaZL/plain.png" alt="Temas más importantes para el electorado"/>
+
 
 Aunque "El estado de la democracia" era una de las principales preocupaciones para el electorado, según encuestas de salida, otra era "La Economía". Donald Trump tuvo esto muy claro durante la campaña. Iniciaba muchos de sus "rallies" preguntando a sus seguidores, ¿cómo sienten la cartera?
 
-<img src="https://datawrapper.dwcdn.net/kI9XD/plain.png" alt="Cómo sentían el estado de la economía"/>
+<img src="https://datawrapper.dwcdn.net/skaZL/plain.png" alt="Temas más importantes para el electorado"/>
+
 
 En efecto, Trump consiguió convencer al 67% de los votantes de que su economía iba mal, a pesar de que la inflación (que él ayudó crear) ya fue controlada en tiempo récord para EE. UU., y a pesar de que la recesión que se pronosticaba nunca llegó gracias en parte a las medidas del gobierno, como el proyecto enorme del "Inflation Reduction Act" y del "CHIPS Act", y del banco central subiendo las tazas de interés…
+
+<img src="https://datawrapper.dwcdn.net/kI9XD/plain.png" alt="Cómo sentían el estado de la economía"/>
+
 
 Para mí, estas elecciones fueron comprobación de que al pueblo gringo no les importa si mientes, violas o robas, siempre y cuando los hagas sentir que su cartera está llena. Ah, y que no seas mujer.
