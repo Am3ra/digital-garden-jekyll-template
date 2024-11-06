@@ -2,19 +2,8 @@
 
 Aunque las elecciones de EE. UU. no fueron lo que yo quería, tampoco fueron del todo inesperadas. Aquí te comparto tres de mis reflexiones al respecto:
 
-## 1) EE. UU. es más sexista que racista.
 
-Pero sigue siendo las dos cosas.
-
-A pesar de sus políticas claramente sexistas, de sus planes sexistas (proyecto 2025) y sus actos violadores, los gringos han elegido por primera vez en su historia a un felón para su cargo más alto.
-
-Donald Trump fue uno de los peores (si no es que el peor) presidentes en la historia de EE. UU. . Esto se debe en gran parte a algo que todos sabíamos y sabemos: no tenía experiencia gubernamental ni de ser líder. El resultado es claro: más allá de aprobar una reducción en impuestos a los más ricos de Estados Unidos, y meter jueces a la Suprema Corte, no aprobó grandes proyectos legislativos. No tenía la habilidad política de hacer más.
-
-En estas elecciones, los gringos de nuevo demostraron una diferencia entre los generos. En 2016 como en 2024, las mujeres votaron aproximadamente 10% más por la candidata que por Trump. En los dos casos, ella se perfilaba como una operadora politica con experiencia, con un plan legislativo bastante tradicional. Más de lo mismo.
-
-Sin embargo, cuando Biden se postulo frente a Trump con el lema "Nothing will fundamentally change", ganó. Como dice el Gabo, ahora no tengo pruebas pero tampoco dudas que el sexismo superó el racismo cuando Obama se postuló frente a Sarah Palin y McCain en 2008. En caso de Kamala, tenía las dos en su contra.
-
-## 2) Trump es uno de los mejores comunicadores de nuestro tiempo.
+## 1) Trump es uno de los mejores comunicadores de nuestro tiempo.
 
   
 Esta campaña para mí, más que una hazaña de Trump, fue otra rotunda derrota de los demócratas. Fundamentalmente, por más que hayan hecho bastantes cosas buenas para las economías rurales como haber creado trabajos e incentivado inversiones, los demócratas fueron incapaces de convertir esas acciones en votos adicionales. De hecho, perdieron más de *15 millones* de sufragios con respecto a las elecciones presidenciales pasadas. Me queda claro que la razón de esto es sencilla: los demócratas nunca estuvieron en control de la conversación.
@@ -25,7 +14,7 @@ A los partidarios de Trump no les importa cómo se comporte. Votarle es su forma
 
 En este sentido, Trump siempre se me ha hecho increiblemente similar a AMLO. Por su capacidad de enfocar su campaña en los pobres, y entender que son mayoría. Por su habilidad de mover grandes masas de personas. Trump nunca ha tenido la claridad intelectual, ni el contexto histórico de la campaña del peje, pero lo que siempre tuvo fue la misma claridad en su mensaje. Lo que para AMLO fue "Primero los Pobres", para Trump fue:
 
-## 3) El dólar sigue siendo el rey
+## 2) El dólar sigue siendo el rey
 
 <img src="https://datawrapper.dwcdn.net/skaZL/plain.png" alt="Temas más importantes para el electorado"/>
 
