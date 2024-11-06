@@ -1,6 +1,6 @@
 
 
-Aunque las elecciones de EE. UU. no fueron lo que yo quería, tampoco fueron del todo inesperadas. Aquí te comparto tres de mis reflexiones al respecto:
+Aunque las elecciones de EE. UU. no fueron lo que yo quería, tampoco fueron del todo inesperadas. Aquí te comparto dos de mis reflexiones al respecto:
 
 
 ## 1) Trump es uno de los mejores comunicadores de nuestro tiempo.
